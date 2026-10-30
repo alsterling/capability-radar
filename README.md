@@ -1,10 +1,12 @@
 # Capability Radar
 
-**Status: 0.1.1 public alpha candidate. Not production-ready.**
+**Status: 0.1.1 public alpha. Not production-ready.**
 
 An on-demand radar for AI capabilities: Skills, plugins/connectors, MCP servers, agents, open-source projects, model features, research/search tools and automation tools. It checks what you already have, searches current public sources, dedupes wrappers and forks, ranks by **evidence rather than popularity**, keeps a local ledger, and tells you what to re-verify.
 
-It never installs anything. "Nothing worth changing" is a valid result.
+**Why:** new Skills, plugins, MCP servers and agent tools appear every week, most are wrappers or forks of each other, and star counts say little about whether a tool improves your own work. Capability Radar answers "what is worth adopting, testing or watching for my jobs, given what I already have?" with sources, an evidence-capped verdict, and a date to check again.
+
+**It never installs anything.** It recommends; you decide. "Nothing worth changing" is a valid result.
 
 ## How it works
 
@@ -19,20 +21,32 @@ It never installs anything. "Nothing worth changing" is a valid result.
 **As a Claude Code plugin** (gives `/capability-radar:scan`):
 
 ```bash
-claude plugin marketplace add <owner>/capability-radar
+claude plugin marketplace add alsterling/capability-radar
 ```
 
 ```bash
 claude plugin install capability-radar@capability-radar
 ```
 
+Start a new Claude Code session afterwards so the Skill loads. On Claude on the web, add `alsterling/capability-radar` as a plugin marketplace and enable `capability-radar` there. To install from a local clone instead, run `claude plugin marketplace add ./capability-radar` (the folder you cloned), then the same `install` command.
+
+The plugin's Skill runs the bundled CLI with `python -m capradar`, so Python 3.10+ must be on the machine (no packages needed).
+
 **CLI only** (Python 3.10+, no dependencies):
 
 ```bash
-git clone https://github.com/<owner>/capability-radar && cd capability-radar
+git clone https://github.com/alsterling/capability-radar && cd capability-radar
 ```
 
-Use a virtual environment (recommended):
+Use a virtual environment (recommended). macOS/Linux:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+Windows (PowerShell):
 
 ```powershell
 python -m venv .venv
@@ -40,7 +54,7 @@ python -m venv .venv
 pip install -e .
 ```
 
-On macOS/Linux activate with `source .venv/bin/activate` instead. Or skip the install and run `python -m capradar` from the repo folder.
+Or skip the install and run `python -m capradar` from the repo folder.
 
 ## Use
 
@@ -95,7 +109,7 @@ Name, lane, **capability** (the job it provides, separate from the product name;
 
 ## Reverify
 
-`capradar reverify` lists stale entries (older than the lane's freshness window, or never verified), entries whose reverify date has passed, entries with a reverify trigger to check, and lanes needing a fresh scan. There is no scheduler: run it when you like, or ask the Skill to refresh what it lists.
+`capradar reverify` lists stale entries (older than the lane's freshness window, or never verified), entries whose reverify date has passed, entries with a reverify trigger to check, and lanes needing a fresh scan. `--write-plan` also saves the list to `radar/inbox/reverify-plan-<date>.json`. Reverify never edits the ledger; entries are updated only when a new scan is ingested. There is no scheduler: run it when you like, or ask the Skill to refresh what it lists.
 
 ## Example
 
@@ -124,7 +138,8 @@ Stdlib only, no network. They cover ingest (including idempotent re-ingest), nor
 - **Job fit is lexical.** It matches words of the profile's jobs, not meaning; constraints are not scored. Write jobs in plain words.
 - **Dedupe is rule-based.** Renamed projects with no shared name, alias or repo are not caught; mark them with `duplicate_of`.
 - **No scheduler, server or database**, by design.
-- Plugin packaging has been checked against the documented format but not yet installed from a hosted marketplace.
+- **Alpha.** Tested with Claude Code: plugin install from GitHub and from a local clone, and Skill loading in local and web sessions. Other assistants can follow `skills/scan/SKILL.md` by hand; that path is less tested.
+- **Results go stale.** A verdict is a snapshot with a verification date; run `reverify` before acting on an old one.
 
 ## Privacy
 
