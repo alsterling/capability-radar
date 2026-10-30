@@ -7,7 +7,7 @@
       "name": "capability-radar",
       "source": "./",
       "description": "On-demand AI capability radar: discover, rank by evidence, remember, re-verify.",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }

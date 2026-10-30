@@ -1,0 +1,201 @@
+{
+  "note": "Annotations added for the 0.1.1 rerank. No new research: each capability was assigned by hand from the candidate's own `job` field in the saved scan, and `owned: YES` only where the saved scan's own description or reason says the item is already owned or included in the current plan. Every other field is unchanged.",
+  "fields_added": [
+    "capability",
+    "owned"
+  ],
+  "candidates": {
+    "Agent Skills open standard (agentskills.io)": {
+      "capability": "portable extension standards (Skills, MCP)"
+    },
+    "Anthropic Agent Skills (anthropics/skills)": {
+      "capability": "office document creation"
+    },
+    "Superpowers (obra/superpowers)": {
+      "capability": "structured coding-agent workflow"
+    },
+    "Humanizer (blader/humanizer)": {
+      "capability": "human-quality writing"
+    },
+    "Caveman (terse-output skill)": {
+      "capability": "context and token efficiency"
+    },
+    "skill-creator evals and benchmark mode": {
+      "capability": "measuring whether an AI capability helps",
+      "owned": "YES"
+    },
+    "skills.sh directory and leaderboard": {
+      "capability": "extension discovery"
+    },
+    "Claude plugin directory and developer portal": {
+      "capability": "vetting third-party skills, plugins and MCP servers",
+      "owned": "YES"
+    },
+    "OpenAI plugin directory (ChatGPT and Codex)": {
+      "capability": "extension discovery",
+      "owned": "YES"
+    },
+    "Claude Code official LSP code-intelligence plugins": {
+      "capability": "context and token efficiency",
+      "owned": "YES"
+    },
+    "Email and calendar connectors in ChatGPT and Claude": {
+      "capability": "email and calendar management",
+      "owned": "YES"
+    },
+    "ChatGPT Meetings plugin": {
+      "capability": "meeting capture and summaries",
+      "owned": "YES"
+    },
+    "Skill and plugin security scanning": {
+      "capability": "vetting third-party skills, plugins and MCP servers"
+    },
+    "Context7": {
+      "capability": "current library documentation for coding agents"
+    },
+    "Chrome DevTools MCP": {
+      "capability": "browser debugging and automation for agents"
+    },
+    "Playwright MCP": {
+      "capability": "browser debugging and automation for agents"
+    },
+    "Serena": {
+      "capability": "context and token efficiency"
+    },
+    "serena-slim": {
+      "capability": "context and token efficiency"
+    },
+    "context-mode": {
+      "capability": "context and token efficiency"
+    },
+    "GitHub MCP Server": {
+      "capability": "GitHub access from agents"
+    },
+    "MCP 2026-07-28 specification and official registry": {
+      "capability": "portable extension standards (Skills, MCP)"
+    },
+    "Claude Code cloud sessions and scheduled tasks": {
+      "capability": "background coding-agent execution",
+      "owned": "YES"
+    },
+    "Codex cloud tasks and automations": {
+      "capability": "background coding-agent execution",
+      "owned": "YES"
+    },
+    "Claude Duet": {
+      "capability": "proactive persistent personal agent"
+    },
+    "ChatGPT dots (always-on agents)": {
+      "capability": "proactive persistent personal agent"
+    },
+    "Hermes Agent": {
+      "capability": "proactive persistent personal agent"
+    },
+    "OpenClaw": {
+      "capability": "proactive persistent personal agent"
+    },
+    "GitHub Copilot coding agent (Agent HQ)": {
+      "capability": "background coding-agent execution"
+    },
+    "Google Jules": {
+      "capability": "background coding-agent execution"
+    },
+    "Claude Managed Agents": {
+      "capability": "proactive persistent personal agent"
+    },
+    "RTK (Rust Token Killer)": {
+      "capability": "context and token efficiency"
+    },
+    "Docling": {
+      "capability": "document-to-structured-text conversion"
+    },
+    "MarkItDown": {
+      "capability": "document-to-structured-text conversion"
+    },
+    "SkillsBench": {
+      "capability": "measuring whether an AI capability helps"
+    },
+    "promptfoo": {
+      "capability": "measuring whether an AI capability helps"
+    },
+    "Slidev": {
+      "capability": "research to presentation decks"
+    },
+    "OpenCode": {
+      "capability": "terminal coding agent"
+    },
+    "Claude 5.5 model tiers (Opus, Sonnet, Haiku 5.5)": {
+      "capability": "model routing for cost and quality",
+      "owned": "YES"
+    },
+    "GPT-6 family in ChatGPT and Codex (Sol, Luna, Pro, 6.1 Terra)": {
+      "capability": "frontier general-purpose models",
+      "owned": "YES"
+    },
+    "Claude Slides, Docs and Design in any conversation": {
+      "capability": "research to presentation decks",
+      "owned": "YES"
+    },
+    "Claude Cowork in every conversation (with memory)": {
+      "capability": "office document creation",
+      "owned": "YES"
+    },
+    "ChatGPT Slides": {
+      "capability": "research to presentation decks"
+    },
+    "Monthly API credits on Max and Team plans": {
+      "capability": "model routing for cost and quality"
+    },
+    "Gemini 3.8 Flash and upcoming Gemini 4": {
+      "capability": "frontier general-purpose models"
+    },
+    "Open-weight frontier models (GLM-5.3, Kimi K3)": {
+      "capability": "private local models"
+    },
+    "Built-in deep research in ChatGPT and Claude": {
+      "capability": "cited web research",
+      "owned": "YES"
+    },
+    "Perplexity Search API": {
+      "capability": "cited web research"
+    },
+    "Exa": {
+      "capability": "cited web research"
+    },
+    "Parallel Search API": {
+      "capability": "cited web research"
+    },
+    "Tavily": {
+      "capability": "cited web research"
+    },
+    "Gemini Deep Research Max": {
+      "capability": "cited web research"
+    },
+    "NotebookLM": {
+      "capability": "source-grounded Q&A over fixed documents"
+    },
+    "Elicit": {
+      "capability": "academic literature search"
+    },
+    "Claude scheduled tasks (Cowork, cloud-run)": {
+      "capability": "recurring workflow automation",
+      "owned": "YES"
+    },
+    "ChatGPT scheduled tasks": {
+      "capability": "recurring workflow automation",
+      "owned": "YES"
+    },
+    "Claude Code GitHub Action (anthropics/claude-code-action)": {
+      "capability": "recurring workflow automation"
+    },
+    "n8n": {
+      "capability": "recurring workflow automation"
+    },
+    "Zapier MCP": {
+      "capability": "recurring workflow automation"
+    },
+    "Activepieces": {
+      "capability": "recurring workflow automation"
+    }
+  }
+}

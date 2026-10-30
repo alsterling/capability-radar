@@ -4,6 +4,7 @@
     {
       "name": "Acme Search MCP Server",
       "category": "mcp",
+      "capability": "web research with citations",
       "job": "web search with citations for research",
       "description": "MCP server exposing a search API",
       "sources": [
@@ -32,6 +33,7 @@
     {
       "name": "Hyped Agent Kit",
       "category": "agents",
+      "capability": "autonomous research agents",
       "job": "autonomous research agent",
       "sources": [{"url": "https://github.com/hype/agent-kit", "tier": "TIER3_PRACTICAL", "type": "repo"}],
       "status": "ACTIVE",
@@ -43,6 +45,7 @@
     {
       "name": "Quiet Eval Harness",
       "category": "oss",
+      "capability": "measuring output quality",
       "job": "measure output quality of research briefs",
       "sources": [
         {"url": "https://github.com/quiet/eval-harness", "tier": "TIER2_ECOSYSTEM", "type": "repo"},
@@ -69,6 +72,7 @@
     {
       "name": "Example Chat Pro",
       "category": "models",
+      "capability": "Web research with citations",
       "job": "chat and research",
       "sources": [{"url": "https://chat.example.com/pricing", "tier": "TIER1_OFFICIAL", "type": "docs"}],
       "status": "ACTIVE",
@@ -79,6 +83,7 @@
     {
       "name": "Doc Writer Skill",
       "category": "skill",
+      "capability": "document drafting",
       "job": "turn rough notes into clear documents",
       "sources": [{"url": "https://skills.example.com/doc-writer", "tier": "TIER2_ECOSYSTEM", "type": "registry"}],
       "status": "ACTIVE",

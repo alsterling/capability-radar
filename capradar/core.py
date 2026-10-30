@@ -8,7 +8,8 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 UNKNOWN = "UNKNOWN"
-RECOMMENDATIONS = ("USE", "TEST", "WATCH", "IGNORE")
+# KEEP: already owned and still adequate; nothing new to adopt. USE: newly adopt or start using.
+RECOMMENDATIONS = ("USE", "TEST", "WATCH", "IGNORE", "KEEP")
 TRI = ("YES", "NO", UNKNOWN)
 NATIVE_OVERLAP = ("YES", "PARTIAL", "NO", UNKNOWN)
 EVIDENCE = ("STRONG", "MODERATE", "WEAK", "ANECDOTAL", UNKNOWN)
@@ -24,8 +25,11 @@ ENUM_FIELDS = {
     "native_overlap": NATIVE_OVERLAP,
     "evidence_quality": EVIDENCE,
     "status": STATUS,
+    "owned": TRI,
 }
-TEXT_FIELDS = ("job", "description", "cost", "privacy", "permissions", "reason", "version",
+# capability: the job/capability the candidate provides, separate from the product name. Supplied by the
+# scan; when missing it stays UNKNOWN (the CLI never infers one).
+TEXT_FIELDS = ("capability", "job", "description", "cost", "privacy", "permissions", "reason", "version",
                "evidence_notes", "reverify_trigger", "maintenance_notes")
 DATE_FIELDS = ("last_activity", "last_verified", "reverify_after")
 
@@ -109,6 +113,16 @@ def name_key(name):
     tokens = re.findall(r"[a-z0-9]+", text)
     kept = [t for t in tokens if t not in GENERIC_TOKENS]
     return " ".join(kept or tokens)
+
+
+def words_key(text):
+    """Every word, lowercased: case, accents, spacing and punctuation do not matter."""
+    return " ".join(re.findall(r"[a-z0-9]+", unicodedata.normalize("NFKD", str(text)).lower()))
+
+
+def capability_key(text):
+    """Grouping key for a capability, or None if unknown."""
+    return None if text in (None, "", UNKNOWN) else (words_key(text) or None)
 
 
 def slug(text):

@@ -72,7 +72,11 @@ class Report(unittest.TestCase):
         for label in ("SKILLS", "PLUGINS / CONNECTORS", "MCPS", "AGENTS / PERSISTENT WORKERS", "GITHUB / OSS PROJECTS",
                       "MODELS / NATIVE FEATURES", "RESEARCH / SEARCH TOOLS", "AUTOMATION / WORKFLOW TOOLS"):
             self.assertIn(f"## TOP 10 {label}", md)
-        self.assertIn("## TOP OPPORTUNITIES FOR THIS PROFILE", md)
+        self.assertIn("## TOP CAPABILITY OPPORTUNITIES", md)
+        self.assertIn("## TOP PRODUCT OPPORTUNITIES FOR THIS PROFILE", md)
+        self.assertIn("Keep (already owned, nothing new to adopt): Example Chat Pro", md)
+        self.assertIn("Without a capability (not grouped", md)
+        self.assertIn("**Job fit:**", md)
         self.assertIn("Quiet Eval Harness", md)
         self.assertIn("**Improvement opportunity:** UNKNOWN", md, "unknown fields shown as UNKNOWN")
         self.assertIn("Ignored: ", md)
@@ -112,9 +116,10 @@ class Cli(unittest.TestCase):
             led = L.load(Path(ws) / "ledger.json")
             self.assertEqual(led["scans"][0]["new"], 7)
             self.assertTrue(all(e["verdict_history"] for e in led["entries"].values()))
-            # second ingest of the same scan only merges
+            # a second ingest of the identical scan is skipped (see test_opportunities.IdempotentIngest)
             code, out = run("ingest", "--dir", ws, str(FIX / "scan_basic.json"), "--as-of", "2026-01-15")
-            self.assertIn("0 new, 8 merged", out)
+            self.assertEqual(code, 0)
+            self.assertIn("already ingested (identical content); skipped", out)
 
     def test_missing_workspace_is_a_clear_error(self):
         with tempfile.TemporaryDirectory() as d:
@@ -152,7 +157,7 @@ class PublicSafety(unittest.TestCase):
 
     def test_no_candidate_names_hardcoded_in_code(self):
         names = set()
-        for scan in [FIX / "scan_basic.json", *(ROOT / "examples").glob("*.json")]:
+        for scan in [FIX / "scan_basic.json", *(ROOT / "examples").rglob("scan-*.json")]:
             data = json.loads(scan.read_text(encoding="utf-8"))
             names |= {c["name"] for c in (data.get("candidates", []) if isinstance(data, dict) else data) if c.get("name")}
         code = "\n".join(p.read_text(encoding="utf-8") for p in (ROOT / "capradar").glob("*.py")).lower()

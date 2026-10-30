@@ -8,8 +8,8 @@ from .core import TIERS, UNKNOWN, best_tier, candidate_keys, name_key, parse_dat
 
 SCHEMA = "capradar.ledger/1"
 # Fields where a newer, known value replaces the older one. UNKNOWN never overwrites a known value.
-SCALAR_FIELDS = ("job", "description", "cost", "privacy", "permissions", "reason", "version", "evidence_notes",
-                 "reverify_trigger", "maintenance_notes", "recommendation", "improvement_opportunity",
+SCALAR_FIELDS = ("capability", "owned", "job", "description", "cost", "privacy", "permissions", "reason", "version",
+                 "evidence_notes", "reverify_trigger", "maintenance_notes", "recommendation", "improvement_opportunity",
                  "benchmark_needed", "native_overlap", "evidence_quality", "status", "last_activity",
                  "last_verified", "reverify_after", "popularity", "current_tool", "repo")
 
@@ -56,7 +56,7 @@ def find_match(ledger, c):
 
 def _register(ledger, entry_id):
     e = ledger["entries"][entry_id]
-    for k in _alias_index_keys(e):
+    for k in sorted(_alias_index_keys(e)):  # sorted: ledger.json must not depend on the hash seed
         ledger["aliases"].setdefault(k, entry_id)
 
 

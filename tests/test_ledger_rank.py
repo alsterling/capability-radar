@@ -7,7 +7,7 @@ from pathlib import Path
 from capradar import ledger as L
 from capradar import profile as P
 from capradar.core import load_categories, normalize_candidate
-from capradar.rank import POPULARITY_CAP, evaluate, rank, top_opportunities
+from capradar.rank import COMPLEMENTS, DUPLICATES, OWNED, POPULARITY_CAP, evaluate, rank, top_opportunities
 
 FIX = Path(__file__).parent / "fixtures"
 CATS = load_categories()
@@ -92,14 +92,14 @@ class Persistence(unittest.TestCase):
 
 
 class Ranking(unittest.TestCase):
-    def test_four_verdicts_represented(self):
+    def test_five_verdicts_represented(self):
         led = fixture_ledger()
         verdicts = {v["name"]: v["verdict"] for v in rank(led["entries"].values(), PROF, CATS, TODAY, include_ignored=True)}
         self.assertEqual(verdicts["Quiet Eval Harness"], "USE")
         self.assertEqual(verdicts["Acme Search MCP Server"], "TEST")
         self.assertEqual(verdicts["Mystery Tool"], "WATCH")
         self.assertEqual(verdicts["Old Scraper"], "IGNORE")
-        self.assertEqual(verdicts["Example Chat Pro"], "IGNORE")
+        self.assertEqual(verdicts["Example Chat Pro"], "KEEP", "owned, nothing new to adopt")
 
     def test_popularity_cannot_buy_a_verdict_or_beat_evidence(self):
         led = fixture_ledger()
@@ -116,17 +116,16 @@ class Ranking(unittest.TestCase):
 
     def test_stack_overlap(self):
         led = fixture_ledger()
-        self.assertEqual(view(led, "Example Chat Pro")["stack_overlap"]["level"], "IN_STACK")
-        self.assertEqual(view(led, "Doc Writer Skill")["stack_overlap"],
-                         {"level": "OVERLAP", "with": ["Example Chat Pro"]})
+        self.assertEqual(view(led, "Example Chat Pro")["stack_overlap"]["level"], OWNED)
+        self.assertEqual(view(led, "Doc Writer Skill")["stack_overlap"], {"level": DUPLICATES, "with": ["Example Chat Pro"]})
         self.assertEqual(view(led, "Mystery Tool")["stack_overlap"]["level"], "UNKNOWN")
 
     def test_complementing_current_tool_is_not_overlap(self):
         c = normalize_candidate({"name": "Add-on", "category": "skills", "native_overlap": "NO",
                                  "current_tool": {"name": "Example Chat Pro", "relation": "complements"}}, CATS)[0]
-        self.assertEqual(evaluate(c, PROF, CATS, TODAY)["stack_overlap"]["level"], "NONE")
+        self.assertEqual(evaluate(c, PROF, CATS, TODAY)["stack_overlap"]["level"], COMPLEMENTS)
         c["current_tool"]["relation"] = "REPLACES"
-        self.assertEqual(evaluate(c, PROF, CATS, TODAY)["stack_overlap"]["level"], "OVERLAP")
+        self.assertEqual(evaluate(c, PROF, CATS, TODAY)["stack_overlap"]["level"], DUPLICATES)
 
     def test_top_n_and_category_filter(self):
         led = fixture_ledger()

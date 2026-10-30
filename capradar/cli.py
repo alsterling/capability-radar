@@ -1,6 +1,7 @@
-"""capradar CLI: init, scan (plan), ingest, dedupe, rank, report, reverify."""
+"""capradar CLI: init, scan (plan), ingest, dedupe, rank, report, opportunities, reverify."""
 
 import argparse
+import hashlib
 import json
 import os
 import shutil
@@ -11,7 +12,7 @@ from pathlib import Path
 from . import __version__, ledger as L, profile as P, report as R, reverify as V
 from .core import (DATE_FIELDS, ENUM_FIELDS, PKG_DATA, SOURCE_TYPES, TEXT_FIELDS, TIERS, load_categories,
                    normalize_candidate, resolve_category)
-from .rank import evaluate, rank
+from .rank import capability_opportunities, evaluate, rank
 
 
 class Workspace:
@@ -72,7 +73,11 @@ def contract():
                   "aliases": "list of other names / wrappers / forks", "overlaps_with": "list of tools it duplicates",
                   "duplicate_of": "name of the canonical candidate if this is a wrapper/fork",
                   "current_tool": "{\"name\": ..., \"relation\": REPLACES|COMPLEMENTS|DUPLICATES|BEATS|LOSES_TO}",
-                  "repo": "the candidate's own repository URL, if any"},
+                  "repo": "the candidate's own repository URL, if any",
+                  "capability": "the job/capability it provides, separate from the product name, e.g. "
+                                "'web search with citations'; reuse the same wording for candidates of the same "
+                                "capability so they group",
+                  "owned": "YES if the user already has it (a current-stack item or a feature included in one)"},
         "rule": "Use UNKNOWN for anything you could not verify. Never guess.",
     }
 
@@ -108,10 +113,12 @@ def cmd_scan(ws, a):
 
 
 def _read_scan(path):
+    """(scan metadata, candidates, fingerprint). The fingerprint hashes the parsed content, not the bytes."""
     data = json.loads(Path(path).read_text(encoding="utf-8"))
+    digest = hashlib.sha256(json.dumps(data, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
     if isinstance(data, list):
-        return {}, data
-    return data.get("scan", {}), data.get("candidates", [])
+        return {}, data, digest
+    return data.get("scan", {}), data.get("candidates", []), digest
 
 
 def cmd_ingest(ws, a):
@@ -121,7 +128,10 @@ def cmd_ingest(ws, a):
     led = L.load(ws.ledger)
     rejected = 0
     for path in a.files:
-        meta, raws = _read_scan(path)
+        meta, raws, digest = _read_scan(path)
+        if any(s.get("sha256") == digest for s in led["scans"]):
+            print(f"{Path(path).name}: already ingested (identical content); skipped")
+            continue
         scan_date = meta.get("date") or a.as_of.isoformat()
         counts = {"new": 0, "merged": 0, "rejected": 0}
         for i, raw in enumerate(raws):
@@ -135,9 +145,11 @@ def cmd_ingest(ws, a):
                 print(f"  warn {c['name']}: {w}")
             kind, eid = L.upsert(led, c, scan_date)
             counts[kind] += 1
-            v = evaluate(led["entries"][eid], prof, cats, a.as_of)
-            L.record_verdict(led["entries"][eid], v["verdict"], scan_date)
-        led["scans"].append({"date": scan_date, "file": Path(path).name, **counts})
+            e = led["entries"][eid]
+            v = evaluate(e, prof, cats, a.as_of)
+            L.record_verdict(e, v["verdict"], scan_date)
+            e["job_fit"], e["matched_jobs"] = v["job_fit"], v["matched_jobs"]  # snapshot; reports recompute live
+        led["scans"].append({"date": scan_date, "file": Path(path).name, "sha256": digest, **counts})
         rejected += counts["rejected"]
         print(f"{Path(path).name}: {counts['new']} new, {counts['merged']} merged, {counts['rejected']} rejected")
     L.save(ws.ledger, led)
@@ -166,7 +178,10 @@ def cmd_rank(ws, a):
     for cid in wanted:
         result[cid] = rank(entries, prof, cats, a.as_of, category=cid, top=a.top, include_ignored=a.include_ignored)
     if a.json:
-        print(json.dumps({k: [{"name": v["name"], "verdict": v["verdict"], "score": v["score"], "guard": v["guard"]}
+        print(json.dumps({k: [{"name": v["name"], "capability": v["capability"], "verdict": v["verdict"],
+                               "score": v["score"], "job_fit": v["job_fit"],
+                               "matched_jobs": [m["job"] for m in v["matched_jobs"]],
+                               "stack_relation": v["stack_overlap"]["level"], "guard": v["guard"]}
                               for v in vs] for k, vs in result.items()}, indent=2))
         return 0
     label = {c["id"]: c["label"] for c in cats}
@@ -186,6 +201,27 @@ def cmd_report(ws, a):
                    only=_cats(ws, a.category), details=not a.no_details)
     out = Path(a.out) if a.out else ws.reports / f"radar-{a.as_of.isoformat()}.md"
     _write(out, text)
+    print(f"report: {out}")
+    return 0
+
+
+def cmd_opportunities(ws, a):
+    """Capability-level ranking: print it, and write the Markdown report (or JSON with --json)."""
+    ws.require()
+    cats = ws.categories()
+    led, prof, only = L.load(ws.ledger), P.load(ws.profile), _cats(ws, a.category)
+    entries = [e for e in led["entries"].values() if not only or e["category"] in only]
+    groups, unassigned = capability_opportunities(entries, prof, cats, a.as_of, top=a.top)
+    if a.json:
+        print(json.dumps({"capabilities": groups, "unassigned": [v["name"] for v in unassigned]}, indent=2,
+                         ensure_ascii=False))
+        return 0
+    out = Path(a.out) if a.out else ws.reports / f"opportunities-{a.as_of.isoformat()}.md"
+    _write(out, R.build_capabilities(led, prof, cats, a.as_of, top=a.top, only=only))
+    print(f"TOP {a.top} CAPABILITY OPPORTUNITIES")
+    for i, g in enumerate(groups, 1):
+        print(f"  {i:>2}. {g['opportunity_score']:>5}  {g['capability']}  [{g['coverage']}; "
+              + ", ".join(f"{k} {n}" for k, n in g["verdicts"].items()) + f"; benchmark {g['benchmark_needed']}]")
     print(f"report: {out}")
     return 0
 
@@ -238,6 +274,13 @@ def build_parser():
     sub.choices["rank"].add_argument("--include-ignored", action="store_true")
     sub.choices["report"].add_argument("--out")
     sub.choices["report"].add_argument("--no-details", action="store_true")
+
+    p = sub.add_parser("opportunities", parents=[common], help="rank capabilities (groups of candidates) as opportunities")
+    p.add_argument("--category", action="append", help="lane id/label; repeatable")
+    p.add_argument("--top", type=int, default=10)
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--out")
+    p.set_defaults(fn=cmd_opportunities)
 
     p = sub.add_parser("reverify", parents=[common], help="list stale / due entries and lanes needing a fresh scan")
     p.add_argument("--json", action="store_true")

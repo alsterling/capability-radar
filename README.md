@@ -1,6 +1,6 @@
 # Capability Radar
 
-**Status: 0.1.0 public alpha candidate. Not production-ready.**
+**Status: 0.1.1 public alpha candidate. Not production-ready.**
 
 An on-demand radar for AI capabilities: Skills, plugins/connectors, MCP servers, agents, open-source projects, model features, research/search tools and automation tools. It checks what you already have, searches current public sources, dedupes wrappers and forks, ranks by **evidence rather than popularity**, keeps a local ledger, and tells you what to re-verify.
 
@@ -32,11 +32,15 @@ claude plugin install capability-radar@capability-radar
 git clone https://github.com/<owner>/capability-radar && cd capability-radar
 ```
 
-```bash
+Use a virtual environment (recommended):
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
 pip install -e .
 ```
 
-Or skip the install and run `python -m capradar` from the repo folder.
+On macOS/Linux activate with `source .venv/bin/activate` instead. Or skip the install and run `python -m capradar` from the repo folder.
 
 ## Use
 
@@ -57,6 +61,7 @@ python -m capradar ingest radar/inbox/scan-<date>.json
 python -m capradar dedupe
 python -m capradar rank --top 10 [--category skills] [--json]
 python -m capradar report --top 10      # radar/reports/radar-<date>.md
+python -m capradar opportunities --top 10 [--json]  # capability-level ranking: radar/reports/opportunities-<date>.md
 python -m capradar reverify [--json] [--write-plan]
 ```
 
@@ -72,18 +77,21 @@ Eight default lanes, defined as data in [`capradar/data/categories.json`](caprad
 
 ## Candidate fields
 
-Name, lane, exact job/capability, description, source URLs with tier (`TIER1_OFFICIAL` / `TIER2_ECOSYSTEM` / `TIER3_PRACTICAL`) and type, status/maintenance, last activity, version, popularity signals, evidence quality (`STRONG` / `MODERATE` / `WEAK` / `ANECDOTAL`), cost, privacy, permissions, native overlap, overlaps with, relation to a current tool, recommendation, reason, benchmark needed, improvement opportunity (`YES` / `NO` / `UNKNOWN`), last verified, reverify date/trigger, aliases. Anything not established is `UNKNOWN`. `capradar scan` writes the full contract into each scan plan.
+Name, lane, **capability** (the job it provides, separate from the product name; candidates with the same capability are grouped; missing stays `UNKNOWN` and is never inferred), **owned** (`YES` when already in the user's stack), exact job, description, source URLs with tier (`TIER1_OFFICIAL` / `TIER2_ECOSYSTEM` / `TIER3_PRACTICAL`) and type, status/maintenance, last activity, version, popularity signals, evidence quality (`STRONG` / `MODERATE` / `WEAK` / `ANECDOTAL`), cost, privacy, permissions, native overlap, overlaps with, relation to a current tool, recommendation, reason, benchmark needed, improvement opportunity (`YES` / `NO` / `UNKNOWN`), last verified, reverify date/trigger, aliases. Anything not established is `UNKNOWN`. `capradar scan` writes the full contract into each scan plan.
 
 ## Verdicts and ranking
 
-- **USE** adopt now · **TEST** try on a real job first · **WATCH** not yet · **IGNORE** skip.
-- The Skill proposes a verdict; the CLI **caps** it by evidence. No source caps a verdict at WATCH. WEAK, ANECDOTAL or UNKNOWN evidence, or a needed benchmark, caps it at TEST. ARCHIVED or DEPRECATED means IGNORE. Caps are shown in the report.
-- Score = evidence + source tier + source diversity + maintenance + improvement + job fit − native/stack overlap − staleness + popularity. Popularity is capped at 0.75 points, below one evidence step, and never changes a verdict.
-- **Top opportunities** = improvement `YES`, verdict USE/TEST, not already in your stack.
+- **USE** adopt or start using now · **TEST** try on a real job first · **WATCH** not yet · **KEEP** already owned and adequate, nothing to adopt · **IGNORE** skip.
+- The Skill proposes a verdict; the CLI **caps** it by evidence. No source caps a verdict at WATCH. WEAK, ANECDOTAL or UNKNOWN evidence, or a needed benchmark, caps it at TEST. ARCHIVED or DEPRECATED means IGNORE. Caps are shown in the report. An owned item with improvement `NO` (or a USE with improvement `UNKNOWN`) becomes **KEEP**; KEEP sorts below WATCH and is listed apart from the lane tables.
+- Score = evidence + source tier + source diversity + maintenance + improvement + job fit + overlap − staleness + popularity. Popularity is capped at 0.75 points, below one evidence step, and never changes a verdict.
+- **Current-stack relation** (one penalty at most): `ALREADY_OWNED_SAME_CAPABILITY` (name/alias is a stack item, or `owned: YES`) 0 · `COMPLEMENTS_CURRENT_STACK` (`current_tool` relation COMPLEMENTS) 0 · `DUPLICATES_CURRENT_STACK` (names an owned tool in `overlaps_with`/`current_tool`, or `native_overlap` YES/PARTIAL) −1.5 if native YES, −0.5 if PARTIAL, else −1.0 · `NEW_CAPABILITY` 0.
+- **Job fit** (0–1, worth up to 1.5 points), per profile job: terms = words of 4+ letters, not stopwords, plural `s` dropped, first 6 letters. For each job, relevance = shared terms ÷ the job's terms, counted only when at least 2 terms are shared. `job_fit = min(1, best relevance ÷ 0.5)`. The best single job decides, so a long profile does not inflate it. Matched jobs are shown in the report and stored in the ledger.
+- **Top capability opportunities** (`capradar opportunities`) group candidates by capability. Opportunity (0–10) = 3.0·relevance (best job fit) + 2.5·gap (coverage NONE 1.0, UNKNOWN 0.75, PARTIAL 0.6, COVERED 0 when an owned candidate is KEEP) + 2.0·credibility (best of USE 1.0, TEST 0.75, WATCH 0.25) + 1.5·evidence (best, STRONG = 1) + 1.0·improvement (YES 1, UNKNOWN 0.5) − 1.0·weak share (IGNORE or full duplicates). Candidates without a capability are listed, not grouped.
+- **Top product opportunities** = improvement `YES`, verdict USE/TEST.
 
 ## Ledger and dedupe
 
-`radar/ledger.json` keeps every candidate ever seen: aliases, verdict history (prior verdict), sources, cost/privacy/permissions, version, last verified, reverify date/trigger, and scan history. Duplicates are merged within a lane by normalized name ("Acme MCP Server" = "acme-mcp"), aliases, `duplicate_of`, or the candidate's own repository URL. A shared list page never merges two tools. A newer verification wins; UNKNOWN never overwrites a known value; a weaker-tier record never overwrites a stronger one from the same day.
+`radar/ledger.json` keeps every candidate ever seen (with its job fit and matched jobs as of the last ingest): aliases, verdict history (prior verdict), sources, cost/privacy/permissions, version, last verified, reverify date/trigger, and scan history. Duplicates are merged within a lane by normalized name ("Acme MCP Server" = "acme-mcp"), aliases, `duplicate_of`, or the candidate's own repository URL. A shared list page never merges two tools. A newer verification wins; UNKNOWN never overwrites a known value; a weaker-tier record never overwrites a stronger one from the same day. Ingest is idempotent: a scan whose content was already ingested (same parsed JSON, under any file name) is skipped, so it cannot duplicate candidates, verdict history or seen counts.
 
 ## Reverify
 
@@ -96,7 +104,9 @@ The first dogfood run (2026-10-30, synthetic profile, 8 lanes, 35 candidates, 1 
 - [`examples/scan-2026-10-30.json`](examples/scan-2026-10-30.json): the candidate file the Skill wrote, with queries and sources opened
 - [`examples/ledger-2026-10-30.json`](examples/ledger-2026-10-30.json), [`examples/scan-plan-2026-10-30.json`](examples/scan-plan-2026-10-30.json), [`examples/reverify-example.txt`](examples/reverify-example.txt)
 
-The example is a snapshot from one session. Facts in it will go stale; that is what `reverify` is for.
+The first real-use scan and its 0.1.1 rerank (capability-level ranking, KEEP, new job fit): [`examples/first-real-scan-2026-10-30/`](examples/first-real-scan-2026-10-30/) and [`examples/first-real-scan-2026-10-30-rerank-v0.1.1/`](examples/first-real-scan-2026-10-30-rerank-v0.1.1/).
+
+The examples are snapshots from one session. Facts in it will go stale; that is what `reverify` is for.
 
 ## Tests
 
@@ -104,13 +114,14 @@ The example is a snapshot from one session. Facts in it will go stale; that is w
 python -m unittest discover -s tests
 ```
 
-Stdlib only, no network. They cover ingest, normalization, alias/dedupe, ranking, top-N, lane filtering, all four verdicts, unknown fields, stack overlap, ledger persistence, stale/reverify detection, report generation, and public-safety checks: no personal markers, no network code, no candidate names hardcoded in code.
+Stdlib only, no network. They cover ingest (including idempotent re-ingest), normalization, alias/dedupe, ranking, top-N, lane filtering, all five verdicts, unknown fields, current-stack relation, per-job job fit, capability grouping and ranking, ledger persistence, stale/reverify detection, report generation, and public-safety checks: no personal markers, no network code, no candidate or capability names hardcoded in code, historical example artifacts unchanged.
 
 ## Limitations
 
 - **Discovery quality depends on the assistant running the Skill** and its search tools. One scan samples each lane; it is not a census.
-- **Judgments are the Skill's** (evidence quality, improvement opportunity). The CLI only caps them and ranks consistently. Scores are heuristic, not calibrated.
+- **Judgments are the Skill's** (evidence quality, improvement opportunity, capability, owned). The CLI only caps them and ranks consistently. Scores are heuristic, not calibrated.
 - **Not measured on your jobs.** TEST means "worth a short trial", not "proven better". The radar has no benchmark harness yet.
+- **Job fit is lexical.** It matches words of the profile's jobs, not meaning; constraints are not scored. Write jobs in plain words.
 - **Dedupe is rule-based.** Renamed projects with no shared name, alias or repo are not caught; mark them with `duplicate_of`.
 - **No scheduler, server or database**, by design.
 - Plugin packaging has been checked against the documented format but not yet installed from a hosted marketplace.
