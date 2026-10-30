@@ -141,6 +141,10 @@ Stdlib only, no network. They cover ingest (including idempotent re-ingest), nor
 - **Alpha.** Tested with Claude Code: plugin install from GitHub and from a local clone, and Skill loading in local and web sessions. Other assistants can follow `skills/scan/SKILL.md` by hand; that path is less tested.
 - **Results go stale.** A verdict is a snapshot with a verification date; run `reverify` before acting on an old one.
 
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md): a provider-neutral core with thin host wrappers. Claude Code is the first supported host; other hosts are future work, not yet supported.
+
 ## Privacy
 
 See [PRIVACY.md](PRIVACY.md). Short version: the CLI makes no network calls and sends no telemetry; your workspace stays on your disk; nothing is installed or authorized for you.
