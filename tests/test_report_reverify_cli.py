@@ -1,3 +1,4 @@
+import hashlib
 import io
 import json
 import re
@@ -136,17 +137,22 @@ class PublicSafety(unittest.TestCase):
         return [p for p in ROOT.rglob("*") if p.is_file() and not (set(p.relative_to(ROOT).parts) & skip)
                 and p.suffix in {".py", ".md", ".json", ".toml", ".txt", ""}]
 
+    # sha256 of private names squashed to lowercase letters/digits, so the names themselves are not published
+    PRIVATE_HASHES = {
+        "3a7b723cb20e5d4e344e0a037d81764c2765173d96f1d304dec616c14ec04937",  # private repo name
+        "ad1e802d1181ec2025d01efc9d832ed90be84e86653e1b61e9419de49211bd82",  # earlier private benchmark fixture
+    }
+
     def test_no_private_markers(self):
-        markers = [bytes.fromhex(h).decode() for h in (
-            "41495f457865637574696f6e5f53797374656d",  # private repo name
-            "616c737465726c696e67",                    # account handle
-            "40676d61696c2e636f6d",                    # personal mail domain
-            "44617465204e69676874",                    # earlier private benchmark fixture
-        )]
-        squash = lambda s: re.sub(r"[\s_\-/\\]", "", s.lower())  # catch AI-Execution, ai_execution, paths...
-        markers = [squash(m) for m in markers] + ["appdatalocaltemp", "c:users"]
-        hits = [(p.name, m) for p in self.shipped_files() for m in markers
-                if m in squash(p.read_text(encoding="utf-8", errors="ignore"))]
+        hits = []
+        for p in self.shipped_files():
+            text = p.read_text(encoding="utf-8", errors="ignore")
+            words = re.findall(r"[a-z0-9]+", text.lower())  # any spelling: Foo_Bar, foo-bar, FooBar, paths
+            grams = {"".join(words[i:i + n]) for n in (1, 2, 3) for i in range(len(words) - n + 1)}
+            hits += [(p.name, "private name") for g in grams if hashlib.sha256(g.encode()).hexdigest() in self.PRIVATE_HASHES]
+            squashed = re.sub(r"[\s_\-/\\]", "", text.lower())
+            hits += [(p.name, m) for m in ("appdatalocaltemp", "c:users") if m in squashed]
+            hits += [(p.name, e) for e in re.findall(r"[\w.+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}\b", text)]  # no e-mail addresses
         self.assertEqual(hits, [])
 
     def test_no_network_code_in_cli(self):

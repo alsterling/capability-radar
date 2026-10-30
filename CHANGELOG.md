@@ -12,6 +12,7 @@ Fixes from the first real scan; no new capability.
 - Idempotent ingest: identical scan content is skipped (fingerprint stored per scan).
 - README: virtual-environment setup.
 - First real scan reranked under 0.1.1 in `examples/first-real-scan-2026-10-30-rerank-v0.1.1/`; 0.1.0 artifacts unchanged.
+- Public alpha release prep: README install commands point at the published repository (`alsterling/capability-radar`); the public-safety test checks private names by hash instead of embedding them.
 
 ## 0.1.0 — public alpha candidate
 
