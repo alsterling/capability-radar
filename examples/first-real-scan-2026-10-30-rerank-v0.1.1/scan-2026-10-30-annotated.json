@@ -1,0 +1,2679 @@
+{
+  "scan": {
+    "date": "2026-10-30",
+    "profile": "Technical knowledge worker / builder (generic, public-safe)",
+    "lanes": [
+      "skills",
+      "plugins_connectors",
+      "mcp",
+      "agents",
+      "oss",
+      "models",
+      "research_search",
+      "automation"
+    ],
+    "method": "First real-use run of Capability Radar 0.1.0. One assistant session following skills/scan/SKILL.md. Stack-first: Claude and ChatGPT release notes checked before the market. Web search (standard) per lane; GitHub repo pages and commit pages fetched for repo-backed candidates; support.claude.com and claude.com fetched. The session's network policy blocked direct fetches of most other hosts (help.openai.com, circleci.com, techcrunch.com, implicator.ai), so those pages were read through the search tool; each source's note says 'fetched' or 'search-read'. The GitHub REST API was not available, so release dates came from commit pages where readable. Not an exhaustive census.",
+    "queries": [
+      "Claude release notes October 2026 new features",
+      "ChatGPT release notes October 2026",
+      "Claude Code changelog October 2026 new features plugins skills",
+      "OpenAI Codex changelog October 2026",
+      "GitHub changelog October 2026 Copilot coding agent Agent HQ",
+      "Agent Skills open standard Agentic AI Foundation October 2026",
+      "Codex skills ChatGPT skills SKILL.md OpenAI 2026",
+      "best Claude Code skills 2026 superpowers humanizer most installed skills",
+      "skills.sh directory agent skills leaderboard installs",
+      "humanizer skill Wikipedia signs of AI writing github blader stars",
+      "caveman skill token reduction Claude Code benchmark output tokens",
+      "agent skills security malicious skills study 2026 audit vulnerable",
+      "RTK rust token killer CLI proxy reduce LLM tokens Claude Code github",
+      "Claude Code context window token usage reduce MCP tool search /context 2026 best tools",
+      "ChatGPT plugins 2026 apps directory Codex plugins launch",
+      "Claude plugins directory Build plugins for Claude September 2026 portal",
+      "claude-plugins-official marketplace list of plugins 2026 GitHub",
+      "Claude Code LSP plugins code intelligence pyright typescript-lsp official plugin token savings",
+      "ChatGPT Meetings plugin October 2026 dots always-on agents",
+      "MCP specification 2026 release new version registry November 2026 roadmap",
+      "most useful MCP servers 2026 developers Playwright Chrome DevTools Context7 GitHub MCP ranking",
+      "Serena MCP semantic code retrieval token efficiency benchmark 2026",
+      "MCP server security risk 2026 tool poisoning study malicious MCP servers",
+      "Claude Duet proactive agent research preview review",
+      "OpenClaw October 2026 security status persistent personal agent stars",
+      "Hermes Agent Nous Research persistent agent 2026 release memory skills",
+      "Google Jules October 2026 update background coding agent pricing",
+      "GitHub Copilot coding agent Claude Codex agents Agent HQ available Copilot Pro 2026 pricing premium requests",
+      "Claude Managed Agents API hosted agents 2026 pricing sandbox",
+      "Codex automations scheduled tasks background 2026 Codex app",
+      "trending open source AI developer tools GitHub October 2026",
+      "markitdown docling document conversion LLM 2026 comparison PDF to markdown benchmark",
+      "context-mode MCP github context window optimization coding agents mksglu",
+      "Docling GitHub 2026 release IBM document conversion stars",
+      "Slidev Marp AI generated slides markdown coding agent 2026 presentations from Claude Code",
+      "OpenCode coding agent open source 2026 stars sst opencode",
+      "Gemini latest model October 2026 release Gemini 3.5 Google",
+      "GPT-6 launch October 2026 benchmarks Intelligent UI GPT-6.1 Terra Sol Astra",
+      "GPT-6 ChatGPT release notes (openai.com only)",
+      "Claude Fable 5.1 Mythos 5.1 Opus 5.5 benchmarks independent evaluation SWE-bench",
+      "Claude Opus 5.5 announcement (anthropic.com only)",
+      "best open-weight model October 2026 DeepSeek Qwen Kimi leaderboard Artificial Analysis",
+      "ChatGPT Slides launch October 2026 Space Sites",
+      "deep research agents benchmark 2026 comparison ChatGPT Claude Gemini Perplexity DeepResearch Bench results",
+      "search API for AI agents benchmark 2026 Exa Parallel Tavily Perplexity Brave accuracy independent",
+      "NotebookLM October 2026 new features deep research sources",
+      "Elicit Consensus Undermind academic research AI 2026 systematic review accuracy evaluation",
+      "Tavily acquired 2026 ownership change search API",
+      "Gemini Deep Research Max 2026 Google AI Ultra API",
+      "Artificial Analysis Search Index web search API leaderboard 2026",
+      "n8n 2026 release AI agents MCP n8n 2.0 pricing self-hosted",
+      "Zapier MCP 2026 Zapier agents pricing tasks AI clients",
+      "claude-code-action GitHub Actions 2026 Codex GitHub Action automated PR review workflows",
+      "ChatGPT scheduled tasks Pulse 2026 Claude scheduled tasks Cowork recurring",
+      "does humanizer skill work AI writing patterns evaluation readers detect AI text 2026 study",
+      "claude plugin eval skill evaluation Claude Code 2026 skill-creator evals benchmark skills",
+      "promptfoo 2026 status acquisition open source LLM eval red teaming",
+      "SkillsBench benchmark agent skills effectiveness results 2026",
+      "Gamma AI presentations 2026 vs Claude Slides vs ChatGPT Slides comparison"
+    ],
+    "opened": [
+      "https://support.claude.com/en/articles/12138966-release-notes (fetched twice)",
+      "https://claude.com/blog/build-plugins-for-claude (fetched)",
+      "GitHub repo pages (fetched): anthropics/skills, obra/superpowers, blader/humanizer, rtk-ai/rtk, github/github-mcp-server, upstash/context7, ChromeDevTools/chrome-devtools-mcp, oraios/serena, microsoft/playwright-mcp, openclaw/openclaw, NousResearch/hermes-agent, n8n-io/n8n, activepieces/activepieces, docling-project/docling, mksglu/context-mode, anthropics/claude-code-action",
+      "GitHub commit/release pages (fetched) for last-activity dates on the repos above where readable",
+      "All other sources: read through the web search tool (direct fetch blocked by the session network policy)"
+    ],
+    "saturation": {
+      "skills": "SATURATED: roundups, registry, security studies and benchmark searches stopped adding relevant candidates",
+      "plugins_connectors": "LIMIT_STOPPED: official directories covered; individual partner plugins sampled only where a profile job needed them",
+      "mcp": "SATURATED: ranking roundups converge on the same core servers",
+      "agents": "SATURATED for this profile: owned agents plus the main proactive/persistent options",
+      "oss": "LIMIT_STOPPED: sampled by job (context efficiency, documents, evaluation, slides); not a census of GitHub",
+      "models": "SATURATED for owned providers; Gemini and open-weight sampled via secondary sources only",
+      "research_search": "SATURATED: independent search-API index and deep-research comparisons found",
+      "automation": "SATURATED: owned schedulers, GitHub Action, and the three main platforms"
+    },
+    "annotations": "capability and owned added for the 0.1.1 rerank from capability-annotations.json; no other field changed"
+  },
+  "candidates": [
+    {
+      "name": "Agent Skills open standard (agentskills.io)",
+      "category": "skills",
+      "capability": "portable extension standards (Skills, MCP)",
+      "job": "write a Skill once (SKILL.md folder) and run it in both Claude Code and Codex, the two coding agents already owned",
+      "description": "Open SKILL.md format for packaging procedures; donated by Anthropic to the Agentic AI Foundation (Linux Foundation) on 2026-10-22. Codex, ChatGPT, Copilot and other agents implement it.",
+      "sources": [
+        {
+          "url": "https://anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "tier": "TIER1_OFFICIAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://agentskills.io",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read; spec site, cited by the announcement"
+        },
+        {
+          "url": "https://codex.danielvaughan.com/2026/03/27/codex-cli-skills-ecosystem/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; Codex skill format and trust tiers"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-22",
+      "popularity": {
+        "skills_published": "~1,000,000 (vendor claim)",
+        "installs": 280000000,
+        "platforms": "70+ (secondary)"
+      },
+      "evidence_quality": "STRONG",
+      "evidence_notes": "independent implementations by several vendors (Anthropic, OpenAI Codex, GitHub Copilot) of the same format; this is evidence of portability, not of any one skill's quality",
+      "cost": "free (open standard)",
+      "privacy": "skills run inside the host agent with its permissions",
+      "permissions": "a skill can ship scripts that run with the agent's tool access",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "current_tool": {
+        "name": "Claude Code",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "USE",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Any Skill authored for this profile should target the open format so it runs in Claude Code and Codex alike; no install or cost.",
+      "reverify_trigger": "AAIF governance or format change; new SKILL.md spec version"
+    },
+    {
+      "name": "Anthropic Agent Skills (anthropics/skills)",
+      "category": "skills",
+      "capability": "office document creation",
+      "job": "ready-made document Skills (docx, xlsx, pptx, pdf) and the skill-creator for file and document work inside coding agents",
+      "description": "Anthropic's public Skills repository: example and document skills plus templates; the document skills are source-available, others Apache-2.0.",
+      "repo": "https://github.com/anthropics/skills",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/anthropics/skills/commits/main",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-28"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-28",
+      "version": "UNKNOWN (no GitHub releases)",
+      "popularity": {
+        "stars": 184900,
+        "forks": 21900
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official repo demonstrates the capability; no independent quality measurement found",
+      "cost": "free; runs on an existing plan",
+      "privacy": "runs locally inside the agent",
+      "permissions": "document skills run bundled Python scripts",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude"
+      ],
+      "current_tool": {
+        "name": "Claude",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Claude apps already use these for file creation; the gain is bringing the same document handling into Claude Code/Codex sessions. Try on one real PDF/xlsx job.",
+      "reverify_trigger": "license change of the document skills; new document skill added"
+    },
+    {
+      "name": "Superpowers (obra/superpowers)",
+      "category": "skills",
+      "capability": "structured coding-agent workflow",
+      "job": "structured coding workflow for agents: brainstorm, plan, test-first implementation and subagent-driven development",
+      "description": "Skills framework and software-development methodology for coding agents; supports Claude Code, Codex CLI/App, Copilot CLI, Gemini CLI and others.",
+      "repo": "https://github.com/obra/superpowers",
+      "sources": [
+        {
+          "url": "https://github.com/obra/superpowers",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://dupple.com/learn/best-claude-code-skills-2026",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; most-recommended skill across 2026 roundups"
+        },
+        {
+          "url": "https://www.tella.com/blog/best-claude-code-skills",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "maintenance_notes": "686 commits on main; commit dates not readable in this session",
+      "popularity": {
+        "stars": 308800,
+        "forks": 27500
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "README and roundup claims only; no independent measurement of better outcomes; roundups are affiliate-style",
+      "cost": "free (MIT per secondary sources)",
+      "privacy": "local",
+      "permissions": "skills instruct the agent to run tests, create branches and dispatch subagents",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Very popular, but popularity is not evidence; native plan mode and subagents already cover part of this. Worth one A/B on a real feature build.",
+      "reverify_trigger": "independent evaluation published"
+    },
+    {
+      "name": "Humanizer (blader/humanizer)",
+      "category": "skills",
+      "capability": "human-quality writing",
+      "job": "edit drafts to remove recognizable AI-writing patterns so long-form writing reads as human",
+      "description": "Single-file agent skill based on Wikipedia's 'Signs of AI writing' guide; detects and rewrites ~26-29 patterns.",
+      "repo": "https://github.com/blader/humanizer",
+      "sources": [
+        {
+          "url": "https://github.com/blader/humanizer",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/blader/humanizer/commits/main",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-28"
+        },
+        {
+          "url": "https://agentpedia.codes/blog/humanizer-claude-code-skill-guide",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://gigazine.net/gsc_news/en/20260530-humanizer",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-28",
+      "popularity": {
+        "stars": 62400,
+        "forks": 5000
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "pattern list is grounded in a public guide, but no controlled study shows readers or detectors identify humanized drafts less often; mechanical pattern removal can hurt intentional style",
+      "cost": "free (MIT)",
+      "privacy": "local",
+      "permissions": "none beyond reading/writing the draft",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "reason": "Directly targets the writing job and is the most-used option, but the gain is unproven; a blind A/B on real drafts is needed before relying on it.",
+      "reverify_trigger": "major version or published evaluation"
+    },
+    {
+      "name": "Caveman (terse-output skill)",
+      "category": "skills",
+      "capability": "context and token efficiency",
+      "job": "cut output tokens by making the agent answer tersely",
+      "description": "Skill that makes coding agents reply in compressed 'caveman' prose; companion command compresses memory files.",
+      "aliases": [
+        "caveman-skill"
+      ],
+      "sources": [
+        {
+          "url": "https://www.implicator.ai/caveman-claude-code-skill-cuts-output-20-your-bill-barely-notices-2/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; independent re-measurements cited; direct fetch blocked"
+        },
+        {
+          "url": "https://pasqualepillitteri.it/en/news/846/claude-code-caveman-mode-token-saving",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://www.producthunt.com/products/caveman-claude-code-skill-plugin",
+          "tier": "TIER3_PRACTICAL",
+          "type": "other",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "UNKNOWN",
+      "last_activity": "UNKNOWN",
+      "popularity": {
+        "signal": "viral in 2026; canonical repo not established in this scan"
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "project claims ~65% output reduction; three independent re-measurements found 12-23% output reduction, and output is ~0.6-2.5% of total spend; the skill adds ~1-1.5k input tokens per turn",
+      "cost": "free",
+      "privacy": "local",
+      "permissions": "none",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Measured savings target the smallest share of spend and can go net-negative; input-side context tools address the larger cost.",
+      "reverify_trigger": "input-side compression results published"
+    },
+    {
+      "name": "skill-creator evals and benchmark mode",
+      "category": "skills",
+      "capability": "measuring whether an AI capability helps",
+      "owned": "YES",
+      "job": "write evals for a Skill and benchmark it (pass rate, time, tokens) with vs without the Skill before adopting it",
+      "description": "Anthropic's skill-creator plugin gained Create / Eval / Improve / Benchmark modes in 2026.",
+      "sources": [
+        {
+          "url": "https://claude.com/blog/improving-skill-creator-test-measure-and-refine-agent-skills",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://chaseai.io/blog/claude-code-skill-creator-evals-benchmarks",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://aiidelist.com/blog/claude-code-plugin-eval",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; reports a related 'claude plugin eval' command in v2.1.269; not verified against official notes"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official description of the capability; no independent review of eval quality",
+      "cost": "free with Claude Code",
+      "privacy": "local",
+      "permissions": "runs the skill under test",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "current_tool": {
+        "name": "Claude Code",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "This is the owned tool for the benchmarks this scan says are needed (writing, workflow, token Skills). Use it to run the first A/B.",
+      "reverify_trigger": "'claude plugin eval' confirmed in official changelog"
+    },
+    {
+      "name": "skills.sh directory and leaderboard",
+      "category": "skills",
+      "capability": "extension discovery",
+      "job": "discover Skills by install count and recent activity",
+      "description": "Vercel's open Skills directory with an install-telemetry leaderboard and 'npx skills add' installer.",
+      "sources": [
+        {
+          "url": "https://vercel.com/blog/state-of-agent-skills",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://qaskills.sh/blog/skills-sh-agent-skills-directory-guide",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; leaderboard is driven by installs it promotes"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "popularity": {
+        "skills_listed": "1,000,000+"
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official description; ranking is popularity, which is not evidence of quality",
+      "cost": "free",
+      "privacy": "the skills CLI sends anonymous install telemetry",
+      "permissions": "installed skills run with agent permissions",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Useful only as a discovery feed; studies found 13% of marketplace skills with critical issues, so never install from rank alone.",
+      "reverify_trigger": "adds security review or provenance signals"
+    },
+    {
+      "name": "Claude plugin directory and developer portal",
+      "category": "plugins_connectors",
+      "capability": "vetting third-party skills, plugins and MCP servers",
+      "owned": "YES",
+      "job": "find reviewed plugins/connectors (MCP + skills bundles) for Claude and Claude Code in one place, with safety-scanned submissions",
+      "description": "Developer portal (2026-09-25) for submitting plugins to the Claude directory; submissions are auto-validated and safety-scanned; one discovery experience is rolling out across Claude and Claude Code.",
+      "sources": [
+        {
+          "url": "https://claude.com/blog/build-plugins-for-claude",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "fetched; 2026-09-25 entry"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-09-25",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official announcement; review depth of the safety scan not documented",
+      "cost": "included in Claude plans",
+      "privacy": "connector scopes vary per plugin",
+      "permissions": "per plugin; MCP servers, hooks and commands can run code",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude",
+        "Claude Code"
+      ],
+      "current_tool": {
+        "name": "Claude",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Prefer this reviewed source over random GitHub repos when a plugin is needed; it lowers supply-chain risk for every other plugin/MCP candidate.",
+      "reverify_trigger": "unified Claude + Claude Code discovery ships"
+    },
+    {
+      "name": "OpenAI plugin directory (ChatGPT and Codex)",
+      "category": "plugins_connectors",
+      "capability": "extension discovery",
+      "owned": "YES",
+      "job": "enable packaged workflows (skills + app connections) in ChatGPT and Codex",
+      "description": "Since 2026-07-09 the ChatGPT app directory is a plugin directory; plugins bundle skills, apps and app templates and work in ChatGPT and Codex.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read; direct fetch blocked by session network policy"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-07-09",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official help-center description",
+      "cost": "included; availability depends on plan, region and surface",
+      "privacy": "per app; app approval does not override source-system permissions",
+      "permissions": "per app",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "ChatGPT",
+        "Codex"
+      ],
+      "current_tool": {
+        "name": "ChatGPT",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "reason": "Owned; check which existing apps now ship as plugins with skills before adding any third-party automation."
+    },
+    {
+      "name": "Claude Code official LSP code-intelligence plugins",
+      "category": "plugins_connectors",
+      "capability": "context and token efficiency",
+      "owned": "YES",
+      "job": "semantic code navigation (definitions, references) in Claude Code instead of grep, for fewer tokens and more precise edits",
+      "description": "Official language-server plugins (typescript-lsp, pyright-lsp, and others for ~11 languages) in claude-plugins-official; each needs its language-server binary.",
+      "sources": [
+        {
+          "url": "https://circleci.com/blog/claude-code-lsp/",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; independent benchmark on a ~149K-line TypeScript codebase; direct fetch blocked"
+        },
+        {
+          "url": "https://wmedia.es/en/tips/claude-code-lsp-code-intelligence",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "STRONG",
+      "evidence_notes": "independent CircleCI benchmark: LSP ahead of grep on price and tokens across six tasks ($1.88 vs $2.02); gains larger on Sonnet than Opus; modest overall",
+      "cost": "free; language servers use local RAM",
+      "privacy": "local",
+      "permissions": "runs a local language server",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "current_tool": {
+        "name": "Claude Code",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "reason": "Owned, free and independently measured, but the saving was modest; confirm on a real repo of your own before keeping it on.",
+      "reverify_trigger": "LSP enabled by default in Claude Code"
+    },
+    {
+      "name": "Email and calendar connectors in ChatGPT and Claude",
+      "category": "plugins_connectors",
+      "capability": "email and calendar management",
+      "owned": "YES",
+      "job": "triage email and manage calendar from the assistant you already use",
+      "description": "Both owned assistants ship first-party email/calendar connectors (e.g. ChatGPT added iCloud Mail and Calendar on 2026-10-27; Gmail/Google Calendar and Microsoft 365 connectors exist in both).",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "search-read; 2026-10-27 iCloud entry; direct fetch blocked"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-27",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official release notes; no measurement of time saved",
+      "cost": "included",
+      "privacy": "material: grants the assistant read (and possibly write) access to mail and calendar",
+      "permissions": "OAuth scopes per provider; prefer read-only",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Covers the personal-productivity job with no new vendor; start read-only per the profile's privacy constraint."
+    },
+    {
+      "name": "ChatGPT Meetings plugin",
+      "category": "plugins_connectors",
+      "capability": "meeting capture and summaries",
+      "owned": "YES",
+      "job": "record and summarize meetings from the ChatGPT desktop app",
+      "description": "Meeting-notes plugin launched with ChatGPT Space around DevDay 2026; reported as a macOS desktop beta.",
+      "sources": [
+        {
+          "url": "https://anarlog.so/blog/grok-bot-vs-dots-vs-muse-meetings/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; competitor-authored"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "search-read; Oct 7-8 entry mentions a Meetings plugin"
+        }
+      ],
+      "status": "PREVIEW",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "WEAK",
+      "evidence_notes": "no official feature page found; details from secondary sources",
+      "cost": "UNKNOWN",
+      "privacy": "material: audio is streamed to OpenAI (per a competitor's guide; unverified)",
+      "permissions": "microphone and system audio",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "ChatGPT"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "reason": "Owned but beta and macOS-only; revisit when OpenAI documents data handling.",
+      "reverify_trigger": "general availability or official privacy documentation"
+    },
+    {
+      "name": "Skill and plugin security scanning",
+      "category": "plugins_connectors",
+      "capability": "vetting third-party skills, plugins and MCP servers",
+      "job": "scan third-party skills and plugins for malicious content before they run",
+      "description": "Claude Enterprise admins can auto-scan uploaded third-party skills and plugins (beta, 2026-08-06); directory submissions are also scanned.",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "fetched; 2026-08-06 entry"
+        },
+        {
+          "url": "https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; 3,984 skills audited; 13.4% with a critical issue; 76 malicious payloads"
+        },
+        {
+          "url": "https://arxiv.org/abs/2602.06547v1",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; 98,380 skills; 157 confirmed malicious"
+        }
+      ],
+      "status": "PREVIEW",
+      "last_activity": "2026-08-06",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "risk is independently measured; scanner effectiveness is not",
+      "cost": "Enterprise plans only",
+      "privacy": "UNKNOWN",
+      "permissions": "admin feature",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "reason": "Not available to an individual plan; until it is, manual review of any skill/plugin/MCP stays mandatory.",
+      "reverify_trigger": "scanning reaches Pro/Max plans or Claude Code"
+    },
+    {
+      "name": "Context7",
+      "category": "mcp",
+      "capability": "current library documentation for coding agents",
+      "job": "give the coding agent current, version-specific library documentation instead of stale training data",
+      "description": "Upstash's docs platform and MCP server/CLI; optional free API key for higher rate limits.",
+      "repo": "https://github.com/upstash/context7",
+      "sources": [
+        {
+          "url": "https://github.com/upstash/context7",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/upstash/context7/releases",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest releases dated 23 Oct, year not shown"
+        },
+        {
+          "url": "https://developertoolkit.ai/en/ecosystem/mcp/top-mcp-servers/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; top-5 in a Sept 2026 ranking"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "maintenance_notes": "releases dated 23 Oct (year not shown on page)",
+      "popularity": {
+        "stars": 63900,
+        "forks": 3200
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "no independent measurement of fewer API hallucinations; docs are community-contributed and the backend is closed",
+      "cost": "free tier; API key optional",
+      "privacy": "library queries go to Upstash's service",
+      "permissions": "read-only docs lookup",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "reason": "Targets a real coding failure (stale APIs) but only claims exist; compare against the agent's own web fetch on one library upgrade.",
+      "reverify_trigger": "independent hallucination-rate comparison published"
+    },
+    {
+      "name": "Chrome DevTools MCP",
+      "category": "mcp",
+      "capability": "browser debugging and automation for agents",
+      "job": "let the coding agent inspect, debug and profile a live Chrome page (console, network, performance traces)",
+      "description": "Official Chrome DevTools team MCP server and CLI for coding agents.",
+      "repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "sources": [
+        {
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/commits/main",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-29"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "popularity": {
+        "stars": 54500,
+        "forks": 5900
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official vendor docs; no independent outcome measurement",
+      "cost": "free (Apache-2.0)",
+      "privacy": "usage statistics on by default (opt out with --no-usage-statistics); performance tools may send trace URLs to Google CrUX",
+      "permissions": "full control of a browser profile; avoid profiles with personal sessions",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "reason": "Fills a real gap for front-end debugging in the coding job; telemetry defaults must be turned off first."
+    },
+    {
+      "name": "Playwright MCP",
+      "category": "mcp",
+      "capability": "browser debugging and automation for agents",
+      "job": "browser automation for agents via the accessibility tree",
+      "description": "Microsoft's Playwright MCP server; its README recommends the Playwright CLI + Skills for coding agents as more token-efficient.",
+      "repo": "https://github.com/microsoft/playwright-mcp",
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/microsoft/playwright-mcp/commits/main",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-22"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-22",
+      "popularity": {
+        "stars": 38800,
+        "forks": 3300
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official docs; vendor itself steers coding agents to CLI + Skills",
+      "cost": "free (Apache-2.0)",
+      "privacy": "local browser",
+      "permissions": "browser control",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code",
+        "ChatGPT"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "For this profile's coding work the vendor recommends the CLI + Skills path; MCP fits long-running browser loops only."
+    },
+    {
+      "name": "Serena",
+      "category": "mcp",
+      "capability": "context and token efficiency",
+      "job": "symbol-level code retrieval and editing for agents via language servers (40+ languages)",
+      "description": "Open-source MCP toolkit giving agents IDE-like semantic tools; works with Claude Code, Codex, Gemini CLI and IDEs.",
+      "repo": "https://github.com/oraios/serena",
+      "sources": [
+        {
+          "url": "https://github.com/oraios/serena",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/oraios/serena/commits/main",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-28"
+        },
+        {
+          "url": "https://rywalker.com/research/serena",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-28",
+      "popularity": {
+        "stars": 30900,
+        "forks": 2100
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "'much more token-efficient' is a README claim; the widely quoted 98% figure belongs to a different project",
+      "cost": "free",
+      "privacy": "local",
+      "permissions": "reads and edits the repository",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "current_tool": {
+        "name": "Claude Code",
+        "relation": "DUPLICATES"
+      },
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Claude Code's own LSP plugins cover the same job with independent evidence; Serena matters only if Codex needs the same capability. GPL-3.0 for the app."
+    },
+    {
+      "name": "serena-slim",
+      "category": "mcp",
+      "capability": "context and token efficiency",
+      "job": "smaller tool surface for Serena (29 tools grouped into 18)",
+      "description": "Fork of Serena that groups tools to cut tool-schema context; claims 50.3% fewer context tokens.",
+      "duplicate_of": "Serena",
+      "sources": [
+        {
+          "url": "https://lobehub.com/mcp/mcpslim-serena-slim",
+          "tier": "TIER3_PRACTICAL",
+          "type": "registry",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "UNKNOWN",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "WEAK",
+      "evidence_notes": "fork's own estimate; reduction is schema overhead, not retrieval",
+      "native_overlap": "PARTIAL",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Wrapper of Serena; Claude Code tool search already defers tool schemas."
+    },
+    {
+      "name": "context-mode",
+      "category": "mcp",
+      "capability": "context and token efficiency",
+      "job": "keep large tool outputs (logs, snapshots, API dumps) out of the agent's context by sandboxing them and returning summaries",
+      "description": "MCP server + hooks that run tool output in a sandbox, index it in SQLite FTS5, and return only relevant snippets; supports ~18 agents.",
+      "repo": "https://github.com/mksglu/context-mode",
+      "sources": [
+        {
+          "url": "https://github.com/mksglu/context-mode",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/mksglu/context-mode/commits/main",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-29"
+        },
+        {
+          "url": "https://betterstack.com/community/guides/ai/context-mode-mcp/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "popularity": {
+        "stars": 32900,
+        "forks": 2300
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "98% tool-output reduction (315 KB -> 5.4 KB) is the project's own figure; no independent end-to-end task measurement",
+      "cost": "free; Elastic License 2.0 (not OSI open source)",
+      "privacy": "local",
+      "permissions": "hooks intercept tool calls; MCP sandbox executes commands",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "reason": "Targets the largest context drain (tool output, 60-80% of context per one guide); must be benchmarked for task success, not just bytes saved.",
+      "reverify_trigger": "independent task-success benchmark"
+    },
+    {
+      "name": "GitHub MCP Server",
+      "category": "mcp",
+      "capability": "GitHub access from agents",
+      "job": "issues, PRs, code search and Actions from any MCP client",
+      "description": "GitHub's official MCP server, local or hosted remote, with a read-only mode.",
+      "repo": "https://github.com/github/github-mcp-server",
+      "sources": [
+        {
+          "url": "https://github.com/github/github-mcp-server",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/github/github-mcp-server/commits/main",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-28"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-28",
+      "popularity": {
+        "stars": 34100,
+        "forks": 5300
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official docs",
+      "cost": "free",
+      "privacy": "GitHub token scopes",
+      "permissions": "repo scopes; --read-only available",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "GitHub",
+        "Claude Code",
+        "Codex"
+      ],
+      "current_tool": {
+        "name": "GitHub",
+        "relation": "DUPLICATES"
+      },
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "The owned agents already reach GitHub through the gh CLI and native GitHub connectors; adds context cost without a new capability."
+    },
+    {
+      "name": "MCP 2026-07-28 specification and official registry",
+      "category": "mcp",
+      "capability": "portable extension standards (Skills, MCP)",
+      "job": "know which protocol version and registry future MCP servers and Skills should target",
+      "description": "Largest MCP revision since launch: stateless protocol without the initialize handshake; roadmap adds agent identity and HTTP-native transport; official registry at registry.modelcontextprotocol.io.",
+      "sources": [
+        {
+          "url": "https://blog.modelcontextprotocol.io/tags/mcp/",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://aaif.io/blog/mcp-2026-07-28-whats-changing-and-how-to-migrate",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-07-28",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official spec communication; some pages still label it a release candidate",
+      "cost": "free",
+      "privacy": "UNKNOWN",
+      "permissions": "UNKNOWN",
+      "native_overlap": "NO",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Not something to adopt; it decides how any future public tool from this profile should be built.",
+      "reverify_trigger": "next spec revision or client support for stateless mode"
+    },
+    {
+      "name": "Claude Code cloud sessions and scheduled tasks",
+      "category": "agents",
+      "capability": "background coding-agent execution",
+      "owned": "YES",
+      "job": "run coding tasks unattended in the cloud and on a schedule, then review the result",
+      "description": "Already in the profile's stack: cloud sessions and scheduled tasks in Claude Code.",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official product; owned",
+      "cost": "included in the current plan",
+      "privacy": "code runs in Anthropic-hosted containers",
+      "permissions": "repo access per session",
+      "native_overlap": "YES",
+      "current_tool": {
+        "name": "Claude Code",
+        "relation": "DUPLICATES"
+      },
+      "recommendation": "USE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Already owned; covers background coding execution. Nothing to add."
+    },
+    {
+      "name": "Codex cloud tasks and automations",
+      "category": "agents",
+      "capability": "background coding-agent execution",
+      "owned": "YES",
+      "job": "parallel background coding tasks and scheduled Codex runs",
+      "description": "Codex cloud tasks plus desktop-app automations (scheduled runs in a local project or worktree; need the machine awake).",
+      "sources": [
+        {
+          "url": "https://openai.com/academy/codex-automations",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://codex.danielvaughan.com/2026/04/08/codex-desktop-automations/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official academy page; details from a practitioner blog",
+      "cost": "included in ChatGPT plan",
+      "privacy": "local runs use the local sandbox settings",
+      "permissions": "tighten sandbox for unattended runs",
+      "native_overlap": "YES",
+      "current_tool": {
+        "name": "Codex",
+        "relation": "DUPLICATES"
+      },
+      "recommendation": "USE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Already owned; overlaps Claude Code scheduled tasks. Keep one as the default for scheduled coding work."
+    },
+    {
+      "name": "Claude Duet",
+      "category": "agents",
+      "capability": "proactive persistent personal agent",
+      "job": "proactive assistant that checks connected apps every few hours, sends a morning brief and flags what needs attention",
+      "description": "Standalone Anthropic app (research preview from 2026-10-21) where Claude works as a proactive agent; asks consent before sending, paying, signing or deleting.",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "fetched; 2026-10-21 entry"
+        },
+        {
+          "url": "https://www.vktr.com/ai-platforms/claude-duet-anthropic-previews-an-ai-agent-that-messages-you-first/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://betanews.com/article/proactive-ai-agent-claude-duet/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "PREVIEW",
+      "last_activity": "2026-10-21",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official announcement; no independent hands-on reviews yet",
+      "cost": "included in Pro/Max; background checks count against plan usage",
+      "privacy": "material: reads connected email/calendar/apps on a schedule",
+      "permissions": "connector scopes; consent gates for outbound actions",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude"
+      ],
+      "current_tool": {
+        "name": "Claude",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Owned plan includes it, but it is a US waitlisted research preview; test once it graduates.",
+      "reverify_trigger": "leaves research preview or opens outside the US waitlist"
+    },
+    {
+      "name": "ChatGPT dots (always-on agents)",
+      "category": "agents",
+      "capability": "proactive persistent personal agent",
+      "job": "always-on personal agent with its own cloud computer and browser that keeps working toward goals",
+      "description": "Launched at DevDay 2026-09-29 for Pro and Business Premium; one dot per user at launch; reaches apps via plugins.",
+      "sources": [
+        {
+          "url": "https://www.androidauthority.com/openai-dots-chatgpt-always-on-ai-agents-3717020/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://learn.chatgpt.com/docs/dots",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://zapier.com/blog/chatgpt-dots/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "PREVIEW",
+      "last_activity": "2026-09-29",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official docs page exists; outcome evidence is launch coverage only",
+      "cost": "ChatGPT Pro or Business Premium only",
+      "privacy": "material: agent acts in a cloud browser with connected apps",
+      "permissions": "plugin/app scopes",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "ChatGPT"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Plan-gated to Pro; overlaps Claude Duet and existing scheduled tasks. Revisit if the plan tier includes it.",
+      "reverify_trigger": "available on Plus or multiple dots per user"
+    },
+    {
+      "name": "Hermes Agent",
+      "category": "agents",
+      "capability": "proactive persistent personal agent",
+      "job": "self-hosted persistent agent that keeps memory, writes its own reusable skills and runs scheduled jobs across chat apps",
+      "description": "Nous Research's open-source (MIT) agent; model-agnostic (any OpenAI-compatible endpoint); messaging integrations.",
+      "repo": "https://github.com/NousResearch/hermes-agent",
+      "sources": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/commits/main",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-30"
+        },
+        {
+          "url": "https://hermes-agent.nousresearch.com/docs",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "popularity": {
+        "stars": 258600,
+        "forks": 56800
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "'40% faster with 20+ self-created skills' is Nous's own figure; SkillsBench found self-generated skills do not help on average",
+      "cost": "free; pay for the model endpoint",
+      "privacy": "self-hosted; memory stored locally",
+      "permissions": "host tool execution and messaging accounts",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code",
+        "ChatGPT"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Interesting for persistent execution, but self-hosting an agent with host tool access conflicts with the profile's security constraint while owned scheduled tasks exist.",
+      "reverify_trigger": "independent evaluation or security audit"
+    },
+    {
+      "name": "OpenClaw",
+      "category": "agents",
+      "capability": "proactive persistent personal agent",
+      "job": "local always-on personal agent reachable from chat apps",
+      "description": "Very popular open-source personal agent gateway; README says tools run on the host unless sandboxing is configured.",
+      "repo": "https://github.com/openclaw/openclaw",
+      "sources": [
+        {
+          "url": "https://github.com/openclaw/openclaw",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/openclaw/openclaw/commits/main",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-30"
+        },
+        {
+          "url": "https://lighthouse.mq.edu.au/article/2026/april-2026/openclaw-and-the-security-risks-of-ai-frenzy",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://smartscope.blog/en/blog/openclaw-ai-agent-security-analysis/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; nine CVEs in March 2026 reported"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "popularity": {
+        "stars": 393400,
+        "forks": 82700
+      },
+      "evidence_quality": "ANECDOTAL",
+      "evidence_notes": "adoption is huge, but evidence of job improvement is anecdotal; security record includes multiple 2026 CVEs and vendor advice against running on standard machines",
+      "cost": "free; pay for models",
+      "privacy": "material: runs on the host with access to messages",
+      "permissions": "host tool execution by default",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code",
+        "ChatGPT"
+      ],
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Popularity is not evidence; host-level execution conflicts with the profile's security constraint and the owned stack already has scheduled agents.",
+      "reverify_trigger": "security model hardened (default sandbox, permission model)"
+    },
+    {
+      "name": "GitHub Copilot coding agent (Agent HQ)",
+      "category": "agents",
+      "capability": "background coding-agent execution",
+      "job": "assign GitHub issues to Copilot, Claude or Codex agents that open PRs",
+      "description": "Agent HQ brings third-party agents into GitHub; Claude and Codex agents need Copilot Pro+ ($39/mo); billing moved to AI Credits on 2026-06-01.",
+      "sources": [
+        {
+          "url": "https://github.blog/news-insights/company-news/welcome-home-agents/",
+          "tier": "TIER1_OFFICIAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://www.morphllm.com/comparisons/github-copilot-vs-claude-code",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official announcement; pricing from secondary sources",
+      "cost": "Copilot Pro+ $39/mo for third-party agents (secondary)",
+      "privacy": "code stays on GitHub",
+      "permissions": "repo write via PRs",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude Code",
+        "Codex",
+        "GitHub"
+      ],
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Would pay again for agents already owned directly (Claude Code, Codex)."
+    },
+    {
+      "name": "Google Jules",
+      "category": "agents",
+      "capability": "background coding-agent execution",
+      "job": "asynchronous coding agent working on GitHub repos",
+      "description": "Google's async coding agent; GA in 2026 with tiers tied to Google AI plans; a goal-driven V2 is reported.",
+      "sources": [
+        {
+          "url": "https://theaiagentindex.com/agents/jules",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; tiers last verified 2026-07-10"
+        },
+        {
+          "url": "https://aiweekly.co/alerts/google-jules-v2-targets-claude-code-with-goal-driven-coding-agent",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "WEAK",
+      "evidence_notes": "secondary sources only",
+      "cost": "free 15 tasks/day; Pro/Ultra tiers (secondary)",
+      "privacy": "code processed by Google",
+      "permissions": "GitHub repo access",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Codex",
+        "Claude Code"
+      ],
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Duplicates owned background coding agents."
+    },
+    {
+      "name": "Claude Managed Agents",
+      "category": "agents",
+      "capability": "proactive persistent personal agent",
+      "job": "host your own persistent agent workers on Anthropic's runtime (or a self-hosted sandbox) without running servers",
+      "description": "API service (public beta since 2026-04-08): token pricing plus $0.08 per active session-hour; self-hosted sandboxes in beta.",
+      "sources": [
+        {
+          "url": "https://claude.com/blog/claude-managed-agents",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://claude.com/blog/claude-managed-agents-updates",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://verdent.ai/guides/claude-managed-agents-pricing",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "PREVIEW",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official docs; no independent reliability data",
+      "cost": "API tokens + $0.08/active session-hour; Max/Team monthly API credits can offset",
+      "privacy": "sessions run on Anthropic or your own sandbox",
+      "permissions": "tools you grant the agent",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "reason": "The right substrate if a persistent worker or public tool gets built later; not a personal-use change now.",
+      "reverify_trigger": "leaves beta"
+    },
+    {
+      "name": "RTK (Rust Token Killer)",
+      "category": "oss",
+      "capability": "context and token efficiency",
+      "job": "shrink shell command output (git, tests, builds, logs) before it enters the coding agent's context",
+      "description": "Single Rust binary CLI proxy with a hook that rewrites agent Bash commands; supports Claude Code, Codex, Copilot and ~15 more agents.",
+      "repo": "https://github.com/rtk-ai/rtk",
+      "aliases": [
+        "rtk-ai/rtk"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/rtk-ai/rtk",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/rtk-ai/rtk/commits/develop",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-30"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "popularity": {
+        "stars": 85000,
+        "forks": 5400
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "60-90% is the project's own estimate (bytes/4); README admits bash output is one contributor to input tokens; only Bash calls are covered, not Read/Grep",
+      "cost": "free (Apache-2.0 CLI; engine and proxy components BUSL-1.1)",
+      "privacy": "local",
+      "permissions": "hook rewrites every Bash command the agent runs; 'cargo install rtk' installs an unrelated crate",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "reason": "Addresses tool-output cost, a larger share than output tokens; needs a with/without run on real sessions measuring task success and tokens.",
+      "reverify_trigger": "independent benchmark or license change"
+    },
+    {
+      "name": "Docling",
+      "category": "oss",
+      "capability": "document-to-structured-text conversion",
+      "job": "convert PDF, Office, HTML, audio and image files into structured Markdown/JSON with tables and headings intact",
+      "description": "Document conversion toolkit started at IBM Research; MIT; ships an MCP server.",
+      "repo": "https://github.com/docling-project/docling",
+      "sources": [
+        {
+          "url": "https://github.com/docling-project/docling",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/docling-project/docling/commits/main",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-29"
+        },
+        {
+          "url": "https://yage.ai/share/markitdown-survey-en-20260412.html",
+          "tier": "TIER3_PRACTICAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; cites the OpenDataLoader 12-engine benchmark: Docling 0.882 overall"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "popularity": {
+        "stars": 69800,
+        "forks": 5200
+      },
+      "evidence_quality": "STRONG",
+      "evidence_notes": "independent 12-engine benchmark (via secondary write-up) ranks it top for structure fidelity",
+      "cost": "free (MIT)",
+      "privacy": "local processing",
+      "permissions": "local file access",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Owned assistants read single PDFs fine; Docling is the gain for batch/structured conversion inside coding or research pipelines."
+    },
+    {
+      "name": "MarkItDown",
+      "category": "oss",
+      "capability": "document-to-structured-text conversion",
+      "job": "fast file-to-Markdown text extraction",
+      "description": "Microsoft's lightweight converter; much faster than Docling but drops structure.",
+      "sources": [
+        {
+          "url": "https://yage.ai/share/markitdown-survey-en-20260412.html",
+          "tier": "TIER3_PRACTICAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; OpenDataLoader: 0.589 overall, 0.000 heading hierarchy, 0.273 table fidelity"
+        },
+        {
+          "url": "https://thunderbit.com/de/blog/markitdown-review",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "UNKNOWN",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "STRONG",
+      "evidence_notes": "same independent benchmark; weak on headings and tables",
+      "cost": "free (MIT)",
+      "privacy": "local",
+      "permissions": "local file access",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Docling"
+      ],
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Docling covers the job with better structure; speed alone does not fit research/document work."
+    },
+    {
+      "name": "SkillsBench",
+      "category": "oss",
+      "capability": "measuring whether an AI capability helps",
+      "job": "measure whether a Skill actually raises task pass rates (no skill vs curated vs self-generated)",
+      "description": "Peer-reviewed benchmark (NeurIPS 2026) of 84-87 tasks with deterministic verifiers; curated skills +16.2pp on average, self-generated skills about -1.3pp.",
+      "repo": "https://github.com/benchflow-ai/skillsbench",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2602.12670v1",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://neurips.cc/virtual/2026/poster/139353",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://huggingface.co/datasets/benchflow/skillsbench",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-06-16",
+      "maintenance_notes": "v1.1 leaderboard recomputed 2026-06-16",
+      "evidence_quality": "STRONG",
+      "evidence_notes": "peer-reviewed, deterministic verifiers, multiple models",
+      "cost": "free",
+      "privacy": "local",
+      "permissions": "runs agent tasks in containers",
+      "native_overlap": "NO",
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Gives a credible method (and evidence that focused, curated skills beat long docs) for every Skill candidate this scan marks benchmark-needed."
+    },
+    {
+      "name": "promptfoo",
+      "category": "oss",
+      "capability": "measuring whether an AI capability helps",
+      "job": "repeatable evals and red-team tests comparing prompts, models and agents on your own cases",
+      "description": "MIT CLI/library for LLM evaluation; OpenAI announced its acquisition on 2026-03-09 and said it stays open source.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-to-acquire-promptfoo/",
+          "tier": "TIER1_OFFICIAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://www.securityweek.com/openai-to-acquire-ai-security-startup-promptfoo/amp/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "popularity": {
+        "stars": "13,200 (third-party, may be stale)"
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official docs and broad enterprise use; no independent comparison of eval harnesses found",
+      "cost": "free (MIT); model API costs apply",
+      "privacy": "local; calls the model APIs you configure",
+      "permissions": "API keys for tested providers",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "skill-creator evals and benchmark mode"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Provider-neutral harness for the cross-model comparisons the evaluation job needs (Claude vs ChatGPT vs Codex outputs).",
+      "reverify_trigger": "acquisition closes or license changes"
+    },
+    {
+      "name": "Slidev",
+      "category": "oss",
+      "capability": "research to presentation decks",
+      "job": "build technical slide decks as Markdown/Vue from a coding agent, with PDF/PPTX export",
+      "description": "Open-source Markdown slide framework that ships official Skills for AI coding agents.",
+      "sources": [
+        {
+          "url": "https://sli.dev/guide/work-with-ai",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://fullstackeducator.substack.com/p/the-future-of-ai-generated-slide",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://codenote.net/en/posts/migrate-marp-to-slidev/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "UNKNOWN",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official docs describe the agent workflow; practitioner reports only",
+      "cost": "free",
+      "privacy": "local",
+      "permissions": "local Node toolchain",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Alternative to native Claude Slides for code-heavy, version-controlled decks; compare both on one real deck."
+    },
+    {
+      "name": "OpenCode",
+      "category": "oss",
+      "capability": "terminal coding agent",
+      "job": "open-source, provider-agnostic terminal coding agent",
+      "description": "MIT coding agent (now under anomalyco/opencode); free, with optional paid model access tiers.",
+      "sources": [
+        {
+          "url": "https://morphllm.com/comparisons/opencode-vs-claude-code",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://rywalker.com/research/opencode",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "popularity": {
+        "stars": "~172,000 (June 2026, third-party)"
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "secondary comparisons only",
+      "cost": "free; optional paid tiers",
+      "privacy": "depends on chosen model provider",
+      "permissions": "local shell and files",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Duplicates two owned coding agents; relevant only if open-weight models become a requirement."
+    },
+    {
+      "name": "Claude 5.5 model tiers (Opus, Sonnet, Haiku 5.5)",
+      "category": "models",
+      "capability": "model routing for cost and quality",
+      "owned": "YES",
+      "job": "route each task to the cheapest model that does it well (Haiku 5.5 for high-volume subagent work, Opus 5.5 for hard reasoning)",
+      "description": "Opus 5.5 (2026-09-22; $4/$20 per M tokens; 1M context), Sonnet 5.5 (2026-09-28), Haiku 5.5 (2026-10-07, cheapest/fastest small model).",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://www.vals.ai/comparisons/anthropic_claude-opus-5-5-vs-meta_muse-wonder-full",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://www.orcarouter.ai/blog/claude-opus-5-5-benchmark",
+          "tier": "TIER3_PRACTICAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; independent Terminal-Bench 59.6% vs vendor 66.4%"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-07",
+      "evidence_quality": "STRONG",
+      "evidence_notes": "official cards plus independent evaluations (Artificial Analysis, Vals); independent scores run below vendor scores",
+      "cost": "included in Claude plans; API per-token",
+      "privacy": "per plan terms",
+      "permissions": "n/a",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude",
+        "Claude Code"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "reason": "Already owned; the opportunity is deliberate model routing to cut cost/limits. Measure quality on your own tasks before defaulting subagents to Haiku 5.5.",
+      "reverify_trigger": "new Claude model release"
+    },
+    {
+      "name": "GPT-6 family in ChatGPT and Codex (Sol, Luna, Pro, 6.1 Terra)",
+      "category": "models",
+      "capability": "frontier general-purpose models",
+      "owned": "YES",
+      "job": "default frontier models in the owned ChatGPT and Codex",
+      "description": "GPT-6 Sol/Luna in ChatGPT Work and Codex (2026-09-22); GPT-6 with Intelligent UI in Chat (2026-10-07); GPT-6.1 Terra in Codex/API (2026-10-26).",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official release notes; no independent evaluation surfaced in this scan; secondary sources conflicted on dates",
+      "cost": "included in ChatGPT plan",
+      "privacy": "per plan terms",
+      "permissions": "n/a",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "ChatGPT",
+        "Codex"
+      ],
+      "current_tool": {
+        "name": "ChatGPT",
+        "relation": "DUPLICATES"
+      },
+      "recommendation": "USE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Already the default in owned tools; nothing to change.",
+      "reverify_trigger": "GPT-6.1 Terra reaches Chat or independent evals published"
+    },
+    {
+      "name": "Claude Slides, Docs and Design in any conversation",
+      "category": "models",
+      "capability": "research to presentation decks",
+      "owned": "YES",
+      "job": "turn research into an editable deck or living document inside the assistant already used",
+      "description": "Since 2026-09-16 Claude can create and edit designs, decks and documents in any conversation and in Claude Code; Artifacts on every plan.",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "fetched; 2026-09-16 and 2026-10-07 entries"
+        },
+        {
+          "url": "https://andrew.ooo/answers/chatgpt-slides-vs-gamma-vs-claude-vs-copilot-presentations-2026/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-07",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official release notes; comparisons are vendor-adjacent blogs",
+      "cost": "included",
+      "privacy": "per plan terms",
+      "permissions": "n/a",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude"
+      ],
+      "current_tool": {
+        "name": "Claude",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "reason": "Owned and directly covers the presentations job; compare against the current deck workflow on one real deck before adding any slide tool."
+    },
+    {
+      "name": "Claude Cowork in every conversation (with memory)",
+      "category": "models",
+      "capability": "office document creation",
+      "owned": "YES",
+      "job": "hand off multi-step file work (reports, spreadsheets, presentations) from any chat, with connectors, skills and cross-chat memory",
+      "description": "Cowork capabilities available from any conversation (2026-09-16, gradual for Pro/Max); memory spans chat and Cowork with editable topics (2026-08-25).",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "fetched; 2026-09-16 and 2026-08-25 entries"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-09-16",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official release notes",
+      "cost": "included in Pro/Max",
+      "privacy": "memory on by default for Pro/Max; sensitive topics excluded unless enabled",
+      "permissions": "connectors and skills already granted",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude"
+      ],
+      "current_tool": {
+        "name": "Claude",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Owned capability that covers file/document and productivity jobs; the gap is usage, not tooling."
+    },
+    {
+      "name": "ChatGPT Slides",
+      "category": "models",
+      "capability": "research to presentation decks",
+      "job": "build decks from a conversation, files or outline with PowerPoint/PDF/Google Slides export",
+      "description": "Rolling out from 2026-10-16 inside ChatGPT Space for Pro, Business and Enterprise.",
+      "sources": [
+        {
+          "url": "https://mezha.ua/en/news/openai-launches-chatgpt-slides-316337/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "search-read; 2026-10-20 entry"
+        }
+      ],
+      "status": "PREVIEW",
+      "last_activity": "2026-10-20",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official release notes; quality reports mixed",
+      "cost": "Pro/Business/Enterprise only (not Plus)",
+      "privacy": "per plan terms",
+      "permissions": "n/a",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "ChatGPT",
+        "Claude Slides, Docs and Design in any conversation"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Plan-gated; Claude Slides already covers the job on the owned plan.",
+      "reverify_trigger": "reaches Plus"
+    },
+    {
+      "name": "Monthly API credits on Max and Team plans",
+      "category": "models",
+      "capability": "model routing for cost and quality",
+      "job": "pay for API-side experiments (benchmarks, Managed Agents, evals) from credits already included in the plan",
+      "description": "Since 2026-10-07 Max and Team plans include monthly API credits, claimed by linking a Console organization.",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "fetched; 2026-10-07 entry"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-07",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official release note",
+      "cost": "included in Max/Team",
+      "privacy": "API data terms apply",
+      "permissions": "Console organization link",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "If the plan is Max, this funds the benchmarks this scan recommends at no extra cost; check eligibility first."
+    },
+    {
+      "name": "Gemini 3.8 Flash and upcoming Gemini 4",
+      "category": "models",
+      "capability": "frontier general-purpose models",
+      "job": "second frontier-model family for cross-checking research and long-context work",
+      "description": "Newest generally available Gemini is 3.8 Flash (2026-09-02, per one explainer); Gemini 3.5 Pro delayed; Gemini 4 in post-training.",
+      "sources": [
+        {
+          "url": "https://www.infoworld.com/article/4226642/google-plans-gemini-4-release-before-year-end-2.html",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://presenc.ai/research/google-gemini-model-lineage-2026",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-09-02",
+      "evidence_quality": "WEAK",
+      "evidence_notes": "secondary sources; no official Google page opened",
+      "cost": "UNKNOWN for this profile (not owned)",
+      "privacy": "UNKNOWN",
+      "permissions": "n/a",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Not owned; revisit when Gemini 4 ships with independent evals.",
+      "reverify_trigger": "Gemini 4 general availability"
+    },
+    {
+      "name": "Open-weight frontier models (GLM-5.3, Kimi K3)",
+      "category": "models",
+      "capability": "private local models",
+      "job": "run strong models locally or on private infrastructure for material that must not leave your control",
+      "description": "Leading open-weight models on the Artificial Analysis index in October 2026 per secondary reporting.",
+      "sources": [
+        {
+          "url": "https://pasqualepillitteri.it/en/news/24368/best-open-weight-models-october-2026-compared",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://artificialanalysis.ai/de/articles/recent-open-weights-model-launches",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; April 2026 snapshot"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "WEAK",
+      "evidence_notes": "index numbers conflict across versions; not verified at the primary leaderboard",
+      "cost": "free weights; hardware or hosting cost",
+      "privacy": "best possible when self-hosted",
+      "permissions": "n/a",
+      "native_overlap": "NO",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Only relevant if the privacy constraint ever requires local inference."
+    },
+    {
+      "name": "Built-in deep research in ChatGPT and Claude",
+      "category": "research_search",
+      "capability": "cited web research",
+      "owned": "YES",
+      "job": "multi-step cited research reports from the assistants already owned",
+      "description": "ChatGPT deep research and Claude Research are part of the current stack.",
+      "sources": [
+        {
+          "url": "https://aimultiple.com/ai-deep-research",
+          "tier": "TIER3_PRACTICAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; DR-50 accuracy benchmark, updated April 2026"
+        },
+        {
+          "url": "https://twit.tv/posts/tech/chatgpt-vs-gemini-vs-claude-vs-perplexity-which-ai-does-deep-research-best-2026",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; small head-to-head: ChatGPT 4.54/5 first"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "small independent tests; no current DeepResearch Bench leaderboard found",
+      "cost": "included",
+      "privacy": "per plan terms",
+      "permissions": "n/a",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "current_tool": {
+        "name": "ChatGPT",
+        "relation": "DUPLICATES"
+      },
+      "recommendation": "USE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Already owned and competitive in available tests; the gap is citation verification, not another research app."
+    },
+    {
+      "name": "Perplexity Search API",
+      "category": "research_search",
+      "capability": "cited web research",
+      "job": "web search with fresh, ranked results as a tool inside agents and research pipelines",
+      "description": "Perplexity's search API; its configurations took the top scores on the Artificial Analysis Search Index (launched 2026-08-18).",
+      "sources": [
+        {
+          "url": "https://cryptobriefing.com/perplexity-tops-artificial-analysis-search-index/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read; reports AA Search Index: Perplexity medium 80"
+        },
+        {
+          "url": "https://parallel.ai/ai/articles/best-web-search-api",
+          "tier": "TIER3_PRACTICAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; competitor-published, repeats AA scores"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "STRONG",
+      "evidence_notes": "independent Artificial Analysis Search Index (same harness for all providers); primary leaderboard not opened",
+      "cost": "UNKNOWN (pay-per-use API)",
+      "privacy": "queries sent to Perplexity",
+      "permissions": "API key",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Exa",
+        "Parallel Search API",
+        "Claude Code",
+        "ChatGPT"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Best independent score, but owned agents already search the web; only worth it if built-in search misses evidence on your research questions.",
+      "reverify_trigger": "Artificial Analysis Search Index update"
+    },
+    {
+      "name": "Exa",
+      "category": "research_search",
+      "capability": "cited web research",
+      "job": "neural web search and content retrieval API for agents; strongest on factual lookups",
+      "description": "Search API with fast/instant modes and an MCP server.",
+      "sources": [
+        {
+          "url": "https://parallel.ai/ai/articles/best-fast-search-apis",
+          "tier": "TIER3_PRACTICAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; repeats Openbenchmarks factual-lookup board: Exa Fast 99.3%; AA index 74"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "STRONG",
+      "evidence_notes": "independent boards (Openbenchmarks, AA index), read via a competitor's write-up",
+      "cost": "UNKNOWN (pay-per-use API)",
+      "privacy": "queries sent to Exa",
+      "permissions": "API key",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Perplexity Search API",
+        "Parallel Search API"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Independent leader on factual lookup; benchmark against built-in search and Perplexity on the same question set."
+    },
+    {
+      "name": "Parallel Search API",
+      "category": "research_search",
+      "capability": "cited web research",
+      "job": "search API built for multi-hop agent research",
+      "description": "Search/research API; ~75 on the AA Search Index; leads its own BrowseComp runs.",
+      "sources": [
+        {
+          "url": "https://parallel.ai/ai/articles/most-powerful-search-api-for-ai",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; vendor-run BrowseComp: 74%"
+        },
+        {
+          "url": "https://select.keenable.ai/r/ai-web-search-api-benchmarks/OaFKKMHeqBfx3jQKy9nI-w",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-09-26",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "independent index places it near the top; strongest claims are vendor-run",
+      "cost": "UNKNOWN",
+      "privacy": "queries sent to Parallel",
+      "permissions": "API key",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Perplexity Search API",
+        "Exa"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Close to Perplexity and Exa on independent scores; no reason to test three overlapping APIs at once."
+    },
+    {
+      "name": "Tavily",
+      "category": "research_search",
+      "capability": "cited web research",
+      "job": "search API for LLM agents",
+      "description": "Acquired by Nebius (2026-02-19); continues under its own brand and API.",
+      "sources": [
+        {
+          "url": "https://sacra.com/c/tavily/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://parallel.ai/articles/best-ai-search-for-agents",
+          "tier": "TIER3_PRACTICAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read; vendor-run BrowseComp: Tavily 66%"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "popularity": {
+        "developers": "2M+ (company figure, Aug 2026)"
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "ranks below peers in the available runs; ownership change",
+      "cost": "UNKNOWN",
+      "privacy": "queries sent to Tavily/Nebius",
+      "permissions": "API key",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Exa",
+        "Perplexity Search API"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Lower scores than peers and a new owner setting the roadmap.",
+      "reverify_trigger": "Nebius roadmap or pricing change"
+    },
+    {
+      "name": "Gemini Deep Research Max",
+      "category": "research_search",
+      "capability": "cited web research",
+      "job": "second-opinion long-form research from a different provider (more searches, larger context)",
+      "description": "Deep Research agents on Gemini 3.1 Pro via the Gemini API (preview since 2026-04-21); Max runs about twice the searches.",
+      "sources": [
+        {
+          "url": "https://pasqualepillitteri.it/en/news/1191/google-deep-research-max-gemini-3-1-pro-ai-agents",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://www.typingmind.com/guide/google/deep-research-max-preview-04-2026",
+          "tier": "TIER3_PRACTICAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "PREVIEW",
+      "last_activity": "2026-04-21",
+      "evidence_quality": "WEAK",
+      "evidence_notes": "secondary sources; no independent accuracy result for Max",
+      "cost": "Gemini API pay-as-you-go (~$2/$12 per M tokens, secondary)",
+      "privacy": "queries and uploads go to Google",
+      "permissions": "API key",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Built-in deep research in ChatGPT and Claude"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Cross-provider triangulation can catch errors one assistant makes; test on one high-stakes question only.",
+      "reverify_trigger": "leaves preview or Gemini 4 version ships"
+    },
+    {
+      "name": "NotebookLM",
+      "category": "research_search",
+      "capability": "source-grounded Q&A over fixed documents",
+      "job": "source-grounded Q&A and summaries over a fixed set of uploaded sources",
+      "description": "Google's source-grounded notebook with Deep Research (Nov 2025); no October 2026 changes found.",
+      "sources": [
+        {
+          "url": "https://blog.google/technology/google-labs/notebooklm-deep-research-file-types/",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2025-11-13",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official feature post; no fresh evaluation",
+      "cost": "free tier; paid via Google AI plans",
+      "privacy": "uploads go to Google",
+      "permissions": "n/a",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Projects in the owned assistants cover source-grounded Q&A."
+    },
+    {
+      "name": "Elicit",
+      "category": "research_search",
+      "capability": "academic literature search",
+      "job": "academic literature search and data extraction",
+      "description": "AI research assistant for papers.",
+      "sources": [
+        {
+          "url": "https://casrai.org/compare/elicit-vs-consensus",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; cites two peer-reviewed studies: ~39-40% search sensitivity vs ~94.5% for traditional searches"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/40102714",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "STRONG",
+      "evidence_notes": "independent studies: useful complement, weak standalone recall",
+      "cost": "UNKNOWN",
+      "privacy": "queries go to Elicit",
+      "permissions": "n/a",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Built-in deep research in ChatGPT and Claude"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "reason": "Only relevant if academic literature reviews become a recurring job."
+    },
+    {
+      "name": "Claude scheduled tasks (Cowork, cloud-run)",
+      "category": "automation",
+      "capability": "recurring workflow automation",
+      "owned": "YES",
+      "job": "recurring assistant jobs (briefs, reports, checks) that run without a prompt, using existing connectors and skills",
+      "description": "Cowork scheduled tasks; secondary sources report new tasks run in Anthropic's cloud since 2026-10-06 unless they need local files.",
+      "sources": [
+        {
+          "url": "https://promptoptimizer.tools/blog/how-to-schedule-recurring-tasks-in-claude",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read; dated 2026-10-21"
+        },
+        {
+          "url": "https://www.vellum.ai/blog/official-claude-cowork-breakdown",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-06",
+      "evidence_quality": "WEAK",
+      "evidence_notes": "secondary sources only, with conflicting launch dates; official help page not opened",
+      "cost": "included in Pro/Max/Team/Enterprise",
+      "privacy": "runs with granted connectors",
+      "permissions": "connector scopes",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "Claude"
+      ],
+      "current_tool": {
+        "name": "Claude",
+        "relation": "COMPLEMENTS"
+      },
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Owned; try one recurring workflow here before adding any automation platform."
+    },
+    {
+      "name": "ChatGPT scheduled tasks",
+      "category": "automation",
+      "capability": "recurring workflow automation",
+      "owned": "YES",
+      "job": "recurring prompts and briefings in ChatGPT",
+      "description": "Redesigned scheduled tasks with a Scheduled page (2026-06); replaced Pulse.",
+      "sources": [
+        {
+          "url": "https://gigazine.net/gsc_news/en/20260619-chatgpt-scheduled-tasks/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://pulse2.com/openai-chatgpt-launches-new-scheduled-tasks-page/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-06-18",
+      "evidence_quality": "WEAK",
+      "evidence_notes": "news coverage of an official announcement; official page not opened",
+      "cost": "included",
+      "privacy": "per plan terms",
+      "permissions": "connected apps",
+      "native_overlap": "YES",
+      "overlaps_with": [
+        "ChatGPT",
+        "Claude scheduled tasks (Cowork, cloud-run)"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "reason": "Owned, but overlaps Claude scheduled tasks; keep one scheduler to avoid duplicate jobs."
+    },
+    {
+      "name": "Claude Code GitHub Action (anthropics/claude-code-action)",
+      "category": "automation",
+      "capability": "recurring workflow automation",
+      "job": "run Claude Code inside GitHub Actions for PR review, issue triage and scheduled repo maintenance",
+      "description": "Official MIT action; auth via Anthropic API, Bedrock, Vertex or Foundry.",
+      "repo": "https://github.com/anthropics/claude-code-action",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/claude-code-action",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://www.morphllm.com/claude-code-github-actions",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "maintenance_notes": "836 commits; dates not read",
+      "popularity": {
+        "stars": 9700,
+        "forks": 2200
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official repo; one cited study says <20% of AI review comments lead to code changes",
+      "cost": "Actions minutes + API usage",
+      "privacy": "repo contents sent to the configured provider",
+      "permissions": "repo write via workflow token; API key as secret",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude Code",
+        "GitHub"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO",
+      "reason": "Joins two owned tools (Claude Code + GitHub) for repo automation; start with one low-risk workflow."
+    },
+    {
+      "name": "n8n",
+      "category": "automation",
+      "capability": "recurring workflow automation",
+      "job": "self-hostable multi-step workflows across apps and APIs with AI-agent nodes; consumes and exposes MCP",
+      "description": "Fair-code workflow platform; Community Edition free to self-host; cloud tiers paid.",
+      "repo": "https://github.com/n8n-io/n8n",
+      "sources": [
+        {
+          "url": "https://github.com/n8n-io/n8n",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/n8n-io/n8n/commits/master",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-29"
+        },
+        {
+          "url": "https://godberrystudios.com/posts/n8n-vs-make-vs-zapier-ai-agents-2026/",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "popularity": {
+        "stars": 209100,
+        "forks": 61300
+      },
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "mature product with official docs; comparisons are blogs",
+      "cost": "self-host free (Sustainable Use License); cloud from ~EUR 20-24/mo (secondary, conflicting)",
+      "privacy": "self-hosting keeps data local",
+      "permissions": "credentials for every connected app",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "reason": "Worth it only for deterministic multi-app workflows the assistants' schedulers cannot do reliably; pick one real workflow to compare."
+    },
+    {
+      "name": "Zapier MCP",
+      "category": "automation",
+      "capability": "recurring workflow automation",
+      "job": "give an assistant actions in thousands of SaaS apps through one MCP endpoint",
+      "description": "Runs on an existing Zapier plan; each successful tool call uses 2 tasks from the shared pool.",
+      "sources": [
+        {
+          "url": "https://latenode.com/blog/zapier-mcp-pricing",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        },
+        {
+          "url": "https://zapier.com/blog/zapier-pricing/",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": "search-read"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "evidence_quality": "MODERATE",
+      "evidence_notes": "official pricing docs; beta label inconsistent",
+      "cost": "Free 100 tasks/mo; Professional from $19.99/mo (2 tasks per MCP call)",
+      "privacy": "material: app credentials held by Zapier",
+      "permissions": "per connected app",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "Claude",
+        "ChatGPT",
+        "n8n"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "reason": "Use only for an app with no native connector in the owned assistants."
+    },
+    {
+      "name": "Activepieces",
+      "category": "automation",
+      "capability": "recurring workflow automation",
+      "job": "open-source (MIT) workflow automation with 280+ pieces exposed as MCP servers",
+      "description": "Open-source Zapier alternative; Community Edition MIT, enterprise features commercial.",
+      "repo": "https://github.com/activepieces/activepieces",
+      "sources": [
+        {
+          "url": "https://github.com/activepieces/activepieces",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched"
+        },
+        {
+          "url": "https://github.com/activepieces/activepieces/commits/main",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "fetched; latest commit 2026-10-30"
+        }
+      ],
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "popularity": {
+        "stars": 25300,
+        "forks": 4400
+      },
+      "evidence_quality": "WEAK",
+      "evidence_notes": "README claims only",
+      "cost": "free self-hosted (MIT)",
+      "privacy": "self-hosting keeps data local",
+      "permissions": "credentials for connected apps",
+      "native_overlap": "PARTIAL",
+      "overlaps_with": [
+        "n8n"
+      ],
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "reason": "Overlaps n8n; only one automation platform is worth trialing."
+    }
+  ]
+}
