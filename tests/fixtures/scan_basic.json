@@ -1,0 +1,101 @@
+{
+  "scan": {"date": "2026-01-10", "profile": "fixture", "note": "fictional tools only"},
+  "candidates": [
+    {
+      "name": "Acme Search MCP Server",
+      "category": "mcp",
+      "job": "web search with citations for research",
+      "description": "MCP server exposing a search API",
+      "sources": [
+        {"url": "https://GitHub.com/acme/acme-search-mcp/?utm_source=x", "tier": "TIER1_OFFICIAL", "type": "repo"},
+        {"url": "https://docs.acme.example/search", "tier": "official", "type": "docs"}
+      ],
+      "status": "active",
+      "popularity": {"stars": 900},
+      "evidence_quality": "moderate",
+      "cost": "free tier, then $5 per 1k queries",
+      "privacy": "queries sent to Acme",
+      "permissions": "API key",
+      "native_overlap": "partial",
+      "improvement_opportunity": "yes",
+      "benchmark_needed": "yes",
+      "recommendation": "TEST",
+      "reason": "broader index than built-in search"
+    },
+    {
+      "name": "acme-search mcp",
+      "category": "MCP servers",
+      "description": "community wrapper of the same repo",
+      "sources": [{"url": "https://github.com/acme/acme-search-mcp", "tier": "TIER3_PRACTICAL", "type": "repo"}],
+      "evidence_quality": "weak"
+    },
+    {
+      "name": "Hyped Agent Kit",
+      "category": "agents",
+      "job": "autonomous research agent",
+      "sources": [{"url": "https://github.com/hype/agent-kit", "tier": "TIER3_PRACTICAL", "type": "repo"}],
+      "status": "ACTIVE",
+      "popularity": {"stars": 250000},
+      "evidence_quality": "ANECDOTAL",
+      "improvement_opportunity": "UNKNOWN",
+      "recommendation": "USE"
+    },
+    {
+      "name": "Quiet Eval Harness",
+      "category": "oss",
+      "job": "measure output quality of research briefs",
+      "sources": [
+        {"url": "https://github.com/quiet/eval-harness", "tier": "TIER2_ECOSYSTEM", "type": "repo"},
+        {"url": "https://papers.example.org/quiet-eval", "tier": "TIER1_OFFICIAL", "type": "benchmark"}
+      ],
+      "status": "MAINTAINED",
+      "popularity": {"stars": 120},
+      "evidence_quality": "STRONG",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "NO"
+    },
+    {
+      "name": "Old Scraper",
+      "category": "research_search",
+      "sources": [{"url": "https://github.com/old/scraper", "tier": "TIER3_PRACTICAL", "type": "repo"}],
+      "status": "ARCHIVED",
+      "evidence_quality": "WEAK",
+      "recommendation": "TEST"
+    },
+    {
+      "name": "Mystery Tool",
+      "category": "automation"
+    },
+    {
+      "name": "Example Chat Pro",
+      "category": "models",
+      "job": "chat and research",
+      "sources": [{"url": "https://chat.example.com/pricing", "tier": "TIER1_OFFICIAL", "type": "docs"}],
+      "status": "ACTIVE",
+      "evidence_quality": "STRONG",
+      "improvement_opportunity": "NO",
+      "native_overlap": "YES"
+    },
+    {
+      "name": "Doc Writer Skill",
+      "category": "skill",
+      "job": "turn rough notes into clear documents",
+      "sources": [{"url": "https://skills.example.com/doc-writer", "tier": "TIER2_ECOSYSTEM", "type": "registry"}],
+      "status": "ACTIVE",
+      "evidence_quality": "MODERATE",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "overlaps_with": ["Example Chat Pro"],
+      "reverify_trigger": "a new major version ships",
+      "last_verified": "2025-09-01"
+    },
+    {
+      "name": "",
+      "category": "mcp"
+    },
+    {
+      "name": "Nowhere Thing",
+      "category": "hardware"
+    }
+  ]
+}

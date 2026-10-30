@@ -1,0 +1,8 @@
+{
+  "name": "capability-radar",
+  "version": "0.1.0",
+  "description": "On-demand radar for AI capabilities (Skills, plugins, MCP, agents, OSS, models, research and automation tools): discovers, dedupes, ranks by evidence, keeps a local ledger and flags what to re-verify. Never installs anything.",
+  "author": {"name": "capability-radar contributors"},
+  "license": "MIT",
+  "keywords": ["capability", "radar", "mcp", "skills", "plugins", "agents", "evaluation"]
+}

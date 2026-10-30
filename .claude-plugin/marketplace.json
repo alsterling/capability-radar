@@ -1,0 +1,13 @@
+{
+  "name": "capability-radar",
+  "description": "Capability Radar: an on-demand AI capability radar plugin.",
+  "owner": {"name": "capability-radar contributors"},
+  "plugins": [
+    {
+      "name": "capability-radar",
+      "source": "./",
+      "description": "On-demand AI capability radar: discover, rank by evidence, remember, re-verify.",
+      "version": "0.1.0"
+    }
+  ]
+}

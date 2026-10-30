@@ -1,0 +1,13 @@
+{
+  "note": "Lanes are data, not code. Add a lane by appending an object here (or to config.json in your workspace).",
+  "categories": [
+    {"id": "skills", "label": "Skills", "aliases": ["skill", "agent skills"], "freshness_days": 60},
+    {"id": "plugins_connectors", "label": "Plugins / Connectors", "aliases": ["plugin", "plugins", "connector", "connectors", "integrations"], "freshness_days": 60},
+    {"id": "mcp", "label": "MCPs", "aliases": ["mcp server", "mcp servers", "model context protocol"], "freshness_days": 45},
+    {"id": "agents", "label": "Agents / Persistent Workers", "aliases": ["agent", "persistent worker", "persistent workers", "background agents"], "freshness_days": 45},
+    {"id": "oss", "label": "GitHub / OSS Projects", "aliases": ["github", "open source", "open-source", "repo", "repos"], "freshness_days": 60},
+    {"id": "models", "label": "Models / Native Features", "aliases": ["model", "native", "native feature", "native features"], "freshness_days": 30},
+    {"id": "research_search", "label": "Research / Search Tools", "aliases": ["research", "search", "research tools", "search tools"], "freshness_days": 45},
+    {"id": "automation", "label": "Automation / Workflow Tools", "aliases": ["workflow", "workflows", "automation tools", "workflow tools"], "freshness_days": 60}
+  ]
+}
