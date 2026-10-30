@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+*.tmp
+# your own workspace (profile, ledger, reports) stays local
+/radar/

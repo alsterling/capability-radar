@@ -1,0 +1,2166 @@
+{
+  "schema": "capradar.ledger/1",
+  "entries": {
+    "agents/claude-duet": {
+      "name": "Claude Duet",
+      "category": "agents",
+      "job": "a proactive agent app that works on tasks on its own initiative",
+      "description": "Research preview: a new app where Claude works as a proactive agent.",
+      "cost": "included in Pro and Max",
+      "privacy": "UNKNOWN",
+      "permissions": "UNKNOWN",
+      "reason": "Already paid for in the profile's plan; try it on one weekly admin task before relying on it.",
+      "version": "UNKNOWN",
+      "evidence_notes": "one-line release note; product docs not read in this scan",
+      "reverify_trigger": "leaves research preview",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "NO",
+      "evidence_quality": "WEAK",
+      "status": "PREVIEW",
+      "last_activity": "2026-10-21",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "October 21, 2026 entry"
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": {
+        "name": "Claude Pro",
+        "relation": "COMPLEMENTS"
+      },
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "agents/claude-duet",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "TEST"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "TEST"
+    },
+    "agents/github-copilot-coding": {
+      "name": "GitHub Copilot coding agent",
+      "category": "agents",
+      "job": "assign a GitHub issue and get a pull request back, run on GitHub Actions",
+      "description": "UNKNOWN",
+      "cost": "UNKNOWN (sources disagree: $10 to $39 per month)",
+      "privacy": "runs on GitHub infrastructure",
+      "permissions": "repository write via PR",
+      "reason": "Duplicates the profile's coding agent and would add a subscription.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://alexcloudstar.com/blog/best-background-coding-agents-2026",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://daily.dev/posts/best-background-coding-agents-2026-compared-gnr3iuzyk",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER3_PRACTICAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "agents/github-copilot-coding",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "agents/hermes": {
+      "name": "Hermes Agent",
+      "category": "agents",
+      "job": "self-hosted persistent personal agent",
+      "description": "The agent that grows with you (Nous Research).",
+      "cost": "free (self-hosted); model costs UNKNOWN",
+      "privacy": "self-hosted; depends on configured model provider",
+      "permissions": "UNKNOWN",
+      "reason": "Popularity is not evidence; revisit when independent evaluations appear.",
+      "version": "v0.22.5 (2026-10-23)",
+      "evidence_notes": "very high stars; no measured evidence of job improvement found",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "UNKNOWN",
+      "evidence_quality": "ANECDOTAL",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://dev.to/gydvip/best-open-source-ai-agents-in-2026-2jn9",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER2_ECOSYSTEM",
+      "repo": "github.com/nousresearch/hermes-agent",
+      "popularity": {
+        "stars": 258577
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "agents/hermes",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "agents/openai-codex": {
+      "name": "OpenAI Codex",
+      "category": "agents",
+      "job": "background coding agent in a cloud sandbox, plus a terminal agent",
+      "description": "Lightweight coding agent that runs in your terminal; cloud tasks from IDE, CLI or web.",
+      "cost": "included with ChatGPT Plus (per secondary sources)",
+      "privacy": "code runs in OpenAI cloud sandboxes for cloud tasks",
+      "permissions": "repository access for cloud tasks",
+      "reason": "Already paid for, but duplicates the profile's coding agent; useful as a second opinion only.",
+      "version": "rust-v0.166.0 (2026-10-29)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/openai/codex",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://alexcloudstar.com/blog/best-background-coding-agents-2026",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/openai/codex",
+      "popularity": {
+        "stars": 131612
+      },
+      "aliases": [
+        "Codex CLI",
+        "Codex cloud"
+      ],
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "duplicate_of": null,
+      "current_tool": {
+        "name": "ChatGPT Plus",
+        "relation": "COMPLEMENTS"
+      },
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "agents/openai-codex",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "automation/activepieces": {
+      "name": "Activepieces",
+      "category": "automation",
+      "job": "open-source automation with AI agents and hundreds of MCP servers",
+      "description": "UNKNOWN",
+      "cost": "free to self-host; cloud price UNKNOWN",
+      "privacy": "self-hosted option",
+      "permissions": "per connected app",
+      "reason": "Open-source alternative to n8n; smaller and less evidenced.",
+      "version": "0.92.3-hotfix.2 (2026-10-28)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "NO",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/activepieces/activepieces",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/activepieces/activepieces",
+      "popularity": {
+        "stars": 25289
+      },
+      "aliases": [],
+      "overlaps_with": [
+        "n8n"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "automation/activepieces",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "automation/make-agents": {
+      "name": "Make AI Agents",
+      "category": "automation",
+      "job": "visual agent builder with a reasoning panel inside Make scenarios",
+      "description": "UNKNOWN",
+      "cost": "UNKNOWN (aggregator lists from $9; not verified)",
+      "privacy": "processed by Make",
+      "permissions": "per connected app",
+      "reason": "Comparable to n8n; no evidence it is better for this profile.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "NO",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://aiagentrank.io/compare/make-com-vs-zapier-agents",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER3_PRACTICAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [
+        "n8n"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "automation/make-agents",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "automation/n8n": {
+      "name": "n8n",
+      "category": "automation",
+      "job": "self-hostable visual workflow automation with AI agent steps",
+      "description": "Fair-code workflow automation platform with native AI capabilities; self-host or cloud; 400+ integrations.",
+      "cost": "free to self-host (fair-code license); cloud price not verified",
+      "privacy": "self-hosted keeps data local; cloud processes data at n8n",
+      "permissions": "credentials for each connected app",
+      "reason": "Directly targets the weekly-admin job; try one real workflow self-hosted within the one-hour setup budget.",
+      "version": "n8n@2.45.6 (2026-10-29)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/n8n-io/n8n",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://automationatlas.io/guides/building-ai-agents-with-n8n-2026",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/n8n-io/n8n",
+      "popularity": {
+        "stars": 209069
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "automation/n8n",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "TEST"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "TEST"
+    },
+    "automation/zapier": {
+      "name": "Zapier MCP",
+      "category": "automation",
+      "job": "let an assistant run actions in the apps already connected to a Zapier account",
+      "description": "One MCP server per client at mcp.zapier.com; runs actions through existing Zapier app connections.",
+      "cost": "uses the Zapier plan's task allowance (per secondary sources; not on the docs page opened)",
+      "privacy": "actions run through Zapier and are logged in Zapier history",
+      "permissions": "OAuth from the client, or a long-lived connection token (treat like a password)",
+      "reason": "Fast path to assistant-triggered admin actions, but the profile has no Zapier plan; adding one competes with n8n (free self-hosted) under the one-subscription budget.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://docs.zapier.com/mcp/overview/how-connections-work",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://developersdigest.tech/mcp-servers/zapier",
+          "tier": "TIER3_PRACTICAL",
+          "type": "registry",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "automation/zapier",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "mcp/context7": {
+      "name": "Context7",
+      "category": "mcp",
+      "job": "feed current library documentation into coding prompts to reduce outdated-API errors",
+      "description": "Context7 Platform: up-to-date docs for AI agents.",
+      "cost": "UNKNOWN",
+      "privacy": "library names and queries sent to the Context7 service",
+      "permissions": "UNKNOWN",
+      "reason": "Profile builds Python tools; a one-week trial on real tasks would show whether stale-API mistakes drop.",
+      "version": "@upstash/context7-sdk 0.6.0 (2026-10-23)",
+      "evidence_notes": "README-level claims only; no measured comparison found in this scan",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/upstash/context7",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER2_ECOSYSTEM",
+      "repo": "github.com/upstash/context7",
+      "popularity": {
+        "stars": 63930
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "mcp/context7",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "TEST"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "TEST"
+    },
+    "mcp/firecrawl": {
+      "name": "Firecrawl MCP Server",
+      "category": "mcp",
+      "job": "search, scrape and crawl web pages into clean text for the assistant",
+      "description": "Official Firecrawl MCP server: search, scrape, parse, crawl, map.",
+      "cost": "UNKNOWN (paid API beyond free usage; price not verified)",
+      "privacy": "URLs and pages processed by Firecrawl",
+      "permissions": "API key",
+      "reason": "Built-in web fetch in owned assistants covers most reading; consider only for bulk crawling.",
+      "version": "v3.2.1 (2025-09-26; commits continue)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/firecrawl/firecrawl-mcp-server",
+      "popularity": {
+        "stars": 7723
+      },
+      "aliases": [],
+      "overlaps_with": [
+        "ChatGPT Plus",
+        "Claude Pro"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "mcp/firecrawl",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "mcp/github": {
+      "name": "GitHub MCP Server",
+      "category": "mcp",
+      "job": "let any MCP client read and act on GitHub issues, pull requests and code",
+      "description": "GitHub's official MCP Server.",
+      "cost": "free",
+      "privacy": "repository data passes through your assistant",
+      "permissions": "GitHub token or OAuth scoped to chosen repos",
+      "reason": "A terminal coding agent with the gh CLI already covers PR review; useful mainly for chat clients without a shell.",
+      "version": "v2.0.3 (2026-10-21)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/github/github-mcp-server",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/github/github-mcp-server",
+      "popularity": {
+        "stars": 34074
+      },
+      "aliases": [],
+      "overlaps_with": [
+        "Claude Code",
+        "GitHub"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "mcp/github",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "mcp/playwright": {
+      "name": "Playwright MCP",
+      "category": "mcp",
+      "job": "drive a real browser from the assistant using accessibility snapshots (no vision model)",
+      "description": "Microsoft's Playwright MCP server.",
+      "cost": "free",
+      "privacy": "pages visited are read into the assistant's context",
+      "permissions": "local browser automation",
+      "reason": "Strong tool, but no profile job needs browser automation yet.",
+      "version": "v0.0.83 (2026-09-28)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://getdrio.com/mcp/io-github-microsoft-playwright-mcp/md",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "registry",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/microsoft/playwright-mcp",
+      "popularity": {
+        "stars": 38833
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "mcp/playwright",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "mcp/registry": {
+      "name": "Official MCP Registry",
+      "category": "mcp",
+      "job": "discover and look up MCP servers with publisher namespace verification",
+      "description": "A community driven registry service for MCP servers; reference instance at registry.modelcontextprotocol.io.",
+      "cost": "free",
+      "privacy": "read-only lookups",
+      "permissions": "none",
+      "reason": "A discovery source for this radar, not a capability to adopt.",
+      "version": "v1.8.6 (2026-10-27)",
+      "evidence_notes": "listings are not vetted for trust (secondary review)",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/modelcontextprotocol/registry",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://safedep.io/the-state-of-mcp-registries",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/modelcontextprotocol/registry",
+      "popularity": {
+        "stars": 7423
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "mcp/registry",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "models/claude-5-5-model-family": {
+      "name": "Claude 5.5 model family (Opus, Sonnet, Haiku 5.5)",
+      "category": "models",
+      "job": "current frontier, mid and small models for chat, coding and research",
+      "description": "Opus 5.5 (Sep 22), Sonnet 5.5 (Sep 28) and Haiku 5.5 (Oct 7, 2026).",
+      "cost": "included in Claude Pro (usage limits apply)",
+      "privacy": "per Claude consumer terms",
+      "permissions": "none",
+      "reason": "Already in the owned plan; use the smaller model for routine work and the largest for hard steps. Nothing to buy.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "USE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "native_overlap": "YES",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-07",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-11-29",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": {
+        "name": "Claude Pro",
+        "relation": "COMPLEMENTS"
+      },
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+30d"
+      ],
+      "id": "models/claude-5-5-model-family",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "USE"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "USE"
+    },
+    "models/claude-cowork-in-any-conversation": {
+      "name": "Claude Cowork in any conversation",
+      "category": "models",
+      "job": "create designs, decks and documents from any chat",
+      "description": "UNKNOWN",
+      "cost": "included",
+      "privacy": "per Claude consumer terms",
+      "permissions": "none",
+      "reason": "Targets the client-document job at no extra cost; compare one real deliverable with the current workflow.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "native_overlap": "YES",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-09-16",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-11-29",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "September 16, 2026 entry"
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": {
+        "name": "Claude Pro",
+        "relation": "COMPLEMENTS"
+      },
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+30d"
+      ],
+      "id": "models/claude-cowork-in-any-conversation",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "TEST"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "TEST"
+    },
+    "models/claude-memory": {
+      "name": "Claude memory (Cowork and chat)",
+      "category": "models",
+      "job": "remember preferences and project context across chats and Cowork, with editable topics",
+      "description": "UNKNOWN",
+      "cost": "included",
+      "privacy": "stores remembered items; editable and deletable; sensitive-topics setting",
+      "permissions": "account setting",
+      "reason": "Free to switch on; review what it stores before using it with client work (profile privacy constraint).",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "TEST",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "native_overlap": "YES",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-08-25",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-11-29",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "August 25, 2026 entry"
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": {
+        "name": "Claude Pro",
+        "relation": "COMPLEMENTS"
+      },
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+30d"
+      ],
+      "id": "models/claude-memory",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "TEST"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "TEST"
+    },
+    "models/gpt-6-gpt-6-1-terra-in-chatgpt": {
+      "name": "GPT-6 and GPT-6.1 Terra in ChatGPT",
+      "category": "models",
+      "job": "newer OpenAI models with interactive answers (charts, forms, task tools)",
+      "description": "UNKNOWN",
+      "cost": "UNKNOWN which plans include GPT-6.1 Terra (rolling out to ChatGPT Work and Codex)",
+      "privacy": "per OpenAI terms",
+      "permissions": "none",
+      "reason": "Arrives automatically where the plan includes it; nothing to change.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "native_overlap": "YES",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-26",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-11-29",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "seen in search results; page not opened"
+        },
+        {
+          "url": "https://letsdatascience.com/news/openai-brings-gpt-6-and-intelligent-ui-to-chatgpt-4f0d797c",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": {
+        "name": "ChatGPT Plus",
+        "relation": "COMPLEMENTS"
+      },
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+30d"
+      ],
+      "id": "models/gpt-6-gpt-6-1-terra-in-chatgpt",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "oss/aider": {
+      "name": "Aider",
+      "category": "oss",
+      "job": "git-aware pair programming in the terminal with any model",
+      "description": "aider is AI pair programming in your terminal.",
+      "cost": "free plus model API costs",
+      "privacy": "code goes to the configured model provider",
+      "permissions": "local git",
+      "reason": "Duplicates the profile's coding agent; activity has slowed.",
+      "version": "v0.86.0",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "last push 2026-05-22; latest release v0.86.0 on 2025-08-09",
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "STALE",
+      "last_activity": "2026-05-22",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/Aider-AI/aider",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/aider-ai/aider",
+      "popularity": {
+        "stars": 49824
+      },
+      "aliases": [],
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "oss/aider",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "IGNORE"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "IGNORE"
+    },
+    "oss/awesome": {
+      "name": "awesome-mcp-servers",
+      "category": "oss",
+      "job": "curated list of MCP servers",
+      "description": "A collection of MCP servers.",
+      "cost": "free",
+      "privacy": "none",
+      "permissions": "none",
+      "reason": "A list, not a capability; the radar uses it as a discovery source only.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "native_overlap": "NO",
+      "evidence_quality": "ANECDOTAL",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-23",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/punkpeye/awesome-mcp-servers",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER2_ECOSYSTEM",
+      "repo": "github.com/punkpeye/awesome-mcp-servers",
+      "popularity": {
+        "stars": 97054
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "oss/awesome",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "IGNORE"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "IGNORE"
+    },
+    "oss/browser-use": {
+      "name": "browser-use",
+      "category": "oss",
+      "job": "let a Python script or agent drive a real browser (click, fill forms, read pages)",
+      "description": "Open-source Python library for AI browser agents, plus a hosted cloud.",
+      "cost": "free library; hosted cloud price UNKNOWN",
+      "privacy": "pages and actions go to the configured model",
+      "permissions": "browser control",
+      "reason": "No profile job needs scripted browsing yet.",
+      "version": "0.13.14 (2026-10-26)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/browser-use/browser-use",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/browser-use/browser-use",
+      "popularity": {
+        "stars": 119517
+      },
+      "aliases": [],
+      "overlaps_with": [
+        "Playwright MCP"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "oss/browser-use",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "oss/cline": {
+      "name": "Cline",
+      "category": "oss",
+      "job": "autonomous coding agent as IDE extension, CLI or SDK",
+      "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
+      "cost": "free plus model API costs",
+      "privacy": "code goes to the configured model provider",
+      "permissions": "IDE and shell",
+      "reason": "Duplicates the profile's coding agent.",
+      "version": "v4.1.26 (2026-10-26)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "native_overlap": "NO",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/cline/cline",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/cline/cline",
+      "popularity": {
+        "stars": 71043
+      },
+      "aliases": [],
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "oss/cline",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "IGNORE"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "IGNORE"
+    },
+    "oss/gemini-cli": {
+      "name": "Gemini CLI",
+      "category": "oss",
+      "job": "open-source terminal agent backed by Gemini models",
+      "description": "An open-source AI agent that brings Gemini into your terminal.",
+      "cost": "UNKNOWN",
+      "privacy": "prompts and code go to Google",
+      "permissions": "local shell",
+      "reason": "Third coding agent; worth a look only if the current one hits limits.",
+      "version": "v0.66.0 (2026-10-27)",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/google-gemini/gemini-cli",
+      "popularity": {
+        "stars": 108624
+      },
+      "aliases": [],
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "oss/gemini-cli",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "oss/openhands": {
+      "name": "OpenHands",
+      "category": "oss",
+      "job": "open-source autonomous coding agent in a sandbox (shell, browser, tests)",
+      "description": "OpenHands: AI-Driven Development (formerly OpenDevin).",
+      "cost": "free (self-hosted) plus model API costs",
+      "privacy": "self-hosted; code goes to the configured model provider",
+      "permissions": "sandboxed shell",
+      "reason": "Duplicates the profile's coding agent and adds API costs.",
+      "version": "v1.34.0 (2026-10-27)",
+      "evidence_notes": "SWE-bench Verified 72.8% cited by a secondary source; not checked against the leaderboard",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "YES",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/OpenHands/OpenHands",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://kunalganglani.com/blog/aider-vs-claude-code-openhands-cli.md",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://github.com/All-Hands-AI/OpenHands",
+          "tier": "TIER3_PRACTICAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": "redirects to OpenHands/OpenHands"
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/openhands/openhands",
+      "popularity": {
+        "stars": 92218
+      },
+      "aliases": [
+        "OpenDevin",
+        "OpenHands (All-Hands-AI)"
+      ],
+      "overlaps_with": [
+        "Claude Code"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "oss/openhands",
+      "first_seen": "2026-10-30",
+      "seen_count": 2,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "IGNORE"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "IGNORE"
+    },
+    "plugins_connectors/chatgpt-icloud-mail-calendar": {
+      "name": "ChatGPT iCloud Mail and Calendar",
+      "category": "plugins_connectors",
+      "job": "connect iCloud mail and calendar to ChatGPT",
+      "description": "UNKNOWN",
+      "cost": "all plans (per release notes)",
+      "privacy": "reads mail and calendar",
+      "permissions": "iCloud account link",
+      "reason": "Profile uses Google Workspace, not iCloud.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "native_overlap": "NO",
+      "evidence_quality": "WEAK",
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "seen in search results; page not opened"
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [
+        "Google Workspace"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "plugins_connectors/chatgpt-icloud-mail-calendar",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "IGNORE"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "IGNORE"
+    },
+    "plugins_connectors/claude-code-directory": {
+      "name": "Claude Code official plugin directory (claude-plugins-official)",
+      "category": "plugins_connectors",
+      "job": "add vetted code-review, security-guidance and language-server plugins to the coding agent",
+      "description": "Official, Anthropic-managed directory of Claude Code plugins, registered in Claude Code by default.",
+      "cost": "free with an existing Claude plan",
+      "privacy": "plugins run in your coding agent with its permissions",
+      "permissions": "per plugin (hooks, MCP servers, skills)",
+      "reason": "Profile reviews pull requests; try the code-review plugin on two real PRs against an unaided review.",
+      "version": "UNKNOWN",
+      "evidence_notes": "official docs; plugin counts differ by source (101 in March, 200+ in July, 250+ claimed in August)",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://code.claude.com/docs/en/plugin-marketplaces",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://designrevision.com/blog/official-claude-code-plugins",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/anthropics/claude-plugins-official",
+      "popularity": {
+        "stars": 45327
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": {
+        "name": "Claude Code",
+        "relation": "COMPLEMENTS"
+      },
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "plugins_connectors/claude-code-directory",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "TEST"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "TEST"
+    },
+    "plugins_connectors/salesforce-in-claude": {
+      "name": "Salesforce in Claude",
+      "category": "plugins_connectors",
+      "job": "pre-built sales skills over Salesforce data",
+      "description": "Beta plugin with 37 pre-built sales skills for approved organizations.",
+      "cost": "UNKNOWN",
+      "privacy": "reads CRM data",
+      "permissions": "Salesforce org approval",
+      "reason": "Profile has no Salesforce job.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "PREVIEW",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "September 15, 2026 entry"
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "plugins_connectors/salesforce-in-claude",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "IGNORE"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "IGNORE"
+    },
+    "plugins_connectors/security-scanning": {
+      "name": "Skill and plugin security scanning",
+      "category": "plugins_connectors",
+      "job": "scan third-party skills and plugins for malicious content on upload or edit",
+      "description": "UNKNOWN",
+      "cost": "Enterprise plan",
+      "privacy": "UNKNOWN",
+      "permissions": "Enterprise admin",
+      "reason": "Enterprise-only; not available on the profile's plans. Review skills by hand instead.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "IGNORE",
+      "improvement_opportunity": "NO",
+      "benchmark_needed": "NO",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "PREVIEW",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "tier": "TIER1_OFFICIAL",
+          "type": "changelog",
+          "accessed": "2026-10-30",
+          "note": "August 6, 2026 entry"
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "plugins_connectors/security-scanning",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "IGNORE"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "IGNORE"
+    },
+    "research_search/exa": {
+      "name": "Exa",
+      "category": "research_search",
+      "job": "neural web search and crawling for agents, also as an MCP server",
+      "description": "UNKNOWN",
+      "cost": "pay per use; list price not verified",
+      "privacy": "queries sent to Exa",
+      "permissions": "API key",
+      "reason": "Measured below Perplexity at higher cost in the one benchmark found.",
+      "version": "UNKNOWN",
+      "evidence_notes": "BrowseComp (competitor-run): Auto 70% at $971 per 1k",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-28",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/exa-labs/exa-mcp-server",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://parallel.ai/articles/most-powerful-search-api-for-ai",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/exa-labs/exa-mcp-server",
+      "popularity": {
+        "stars": 5201
+      },
+      "aliases": [
+        "Exa MCP server",
+        "Exa search API"
+      ],
+      "overlaps_with": [
+        "ChatGPT Plus",
+        "Claude Pro"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "research_search/exa",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "research_search/gemini-deep-research-max": {
+      "name": "Gemini Deep Research Max",
+      "category": "research_search",
+      "job": "long autonomous research reports with MCP access to private sources",
+      "description": "UNKNOWN",
+      "cost": "UNKNOWN",
+      "privacy": "UNKNOWN",
+      "permissions": "UNKNOWN",
+      "reason": "Profile already owns two research modes; needs official docs and a head-to-head test first.",
+      "version": "UNKNOWN",
+      "evidence_notes": "UNKNOWN",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "WEAK",
+      "status": "UNKNOWN",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://tomsguide.com/ai/gemini-isnt-just-a-chatbot-anymore-here-are-13-things-it-can-do-in-2026",
+          "tier": "TIER3_PRACTICAL",
+          "type": "news",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER3_PRACTICAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [
+        "ChatGPT Plus",
+        "Claude Pro"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "research_search/gemini-deep-research-max",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "research_search/parallel-search-api": {
+      "name": "Parallel Search API",
+      "category": "research_search",
+      "job": "web search and deep research API for agents",
+      "description": "UNKNOWN",
+      "cost": "pay per use; tiers from about $12 to $612 per 1k BrowseComp questions including LLM tokens",
+      "privacy": "queries sent to Parallel",
+      "permissions": "API key",
+      "reason": "Same as other search APIs: relevant only for a self-built research tool.",
+      "version": "UNKNOWN",
+      "evidence_notes": "vendor's own BrowseComp run (bias disclosed): Advanced 74% at $399 per 1k, Fast 44% at $11.8 per 1k",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://parallel.ai/articles/most-powerful-search-api-for-ai",
+          "tier": "TIER1_OFFICIAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [
+        "ChatGPT Plus",
+        "Claude Pro"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "research_search/parallel-search-api",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "research_search/perplexity-search-api": {
+      "name": "Perplexity Search API",
+      "category": "research_search",
+      "job": "raw web search results for agents and research tools",
+      "description": "UNKNOWN",
+      "cost": "pay per use; list price not verified",
+      "privacy": "queries sent to Perplexity",
+      "permissions": "API key",
+      "reason": "Best measured accuracy-per-cost in the sources found, but only relevant if the profile builds its own research tool.",
+      "version": "UNKNOWN",
+      "evidence_notes": "BrowseComp 50-question sample, 2026-09-09: 74% at $275 per 1k questions (frontier tier), measured by a competitor; Artificial Analysis Search Index 80 per secondary sources",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "UNKNOWN",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://parallel.ai/articles/most-powerful-search-api-for-ai",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "competitor-published BrowseComp run, bias disclosed"
+        },
+        {
+          "url": "https://select.keenable.ai/r/best-search-interfaces-for-ai-agents-2026/MMBoAy2mLxybLFvQBvxuKA",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER2_ECOSYSTEM",
+      "repo": null,
+      "popularity": {},
+      "aliases": [],
+      "overlaps_with": [
+        "ChatGPT Plus",
+        "Claude Pro"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "research_search/perplexity-search-api",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "research_search/tavily": {
+      "name": "Tavily",
+      "category": "research_search",
+      "job": "search, extract, map and crawl API for agents",
+      "description": "UNKNOWN",
+      "cost": "pay per use; list price not verified",
+      "privacy": "queries sent to Tavily",
+      "permissions": "API key",
+      "reason": "Benchmarks disagree by who runs them; ownership change to confirm.",
+      "version": "UNKNOWN",
+      "evidence_notes": "BrowseComp (competitor-run) 66% at $935 per 1k; vendor claims first place on SealQA and SimpleQA",
+      "reverify_trigger": "ownership change confirmed",
+      "maintenance_notes": "acquisition by Nebius in 2026 reported by a competitor; not verified",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-29",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-14",
+      "sources": [
+        {
+          "url": "https://github.com/tavily-ai/tavily-mcp",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://tavily.com/blog/exa-vs-parallel-benchmarking-retrieval-apis-for-ai-agents-in-2026",
+          "tier": "TIER1_OFFICIAL",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": "vendor's own comparison"
+        },
+        {
+          "url": "https://parallel.ai/articles/most-powerful-search-api-for-ai",
+          "tier": "TIER2_ECOSYSTEM",
+          "type": "benchmark",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/tavily-ai/tavily-mcp",
+      "popularity": {
+        "stars": 2464
+      },
+      "aliases": [
+        "Tavily MCP"
+      ],
+      "overlaps_with": [
+        "ChatGPT Plus",
+        "Claude Pro"
+      ],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+45d"
+      ],
+      "id": "research_search/tavily",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    },
+    "skills/anthropic": {
+      "name": "Anthropic Agent Skills (anthropics/skills)",
+      "category": "skills",
+      "job": "ready-made Skills for documents (docx, xlsx, pptx, pdf) and a skill-creator for packaging repeated procedures",
+      "description": "Public repository for Agent Skills: Anthropic's example and document skills plus templates.",
+      "cost": "free (repo); runs inside an existing assistant plan",
+      "privacy": "skills run inside your assistant; bundled scripts execute locally",
+      "permissions": "skills may run bundled scripts; review before installing (supply-chain risk noted by secondary sources)",
+      "reason": "Document skills and skill-creator target two profile jobs (client documents, repeated admin); check on one real document against plain prompting first.",
+      "version": "UNKNOWN (no GitHub releases)",
+      "evidence_notes": "official repo and spec describe the capability; no independent measurement of output quality found",
+      "reverify_trigger": "new document skill added or license change",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "TEST",
+      "improvement_opportunity": "YES",
+      "benchmark_needed": "YES",
+      "native_overlap": "PARTIAL",
+      "evidence_quality": "MODERATE",
+      "status": "ACTIVE",
+      "last_activity": "2026-10-28",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://agentskills.io",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://rywalker.com/research/anthropic-skills",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/anthropics/skills",
+      "popularity": {
+        "stars": 184845
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": {
+        "name": "Claude Code",
+        "relation": "COMPLEMENTS"
+      },
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "skills/anthropic",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "TEST"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "TEST"
+    },
+    "skills/open-standard": {
+      "name": "Agent Skills open standard (agentskills.io)",
+      "category": "skills",
+      "job": "write a Skill once and reuse it across skills-compatible agents",
+      "description": "Open folder format (SKILL.md with name/description + optional scripts, references, assets) loaded by progressive disclosure.",
+      "cost": "free",
+      "privacy": "format only",
+      "permissions": "none (format)",
+      "reason": "Matters only once you author your own skills; it keeps them portable between assistants.",
+      "version": "UNKNOWN",
+      "evidence_notes": "official spec; client adoption counts differ across secondary sources (20+ vs about 40)",
+      "reverify_trigger": "UNKNOWN",
+      "maintenance_notes": "UNKNOWN",
+      "recommendation": "WATCH",
+      "improvement_opportunity": "UNKNOWN",
+      "benchmark_needed": "NO",
+      "native_overlap": "NO",
+      "evidence_quality": "MODERATE",
+      "status": "MAINTAINED",
+      "last_activity": "2026-08-09",
+      "last_verified": "2026-10-30",
+      "reverify_after": "2026-12-29",
+      "sources": [
+        {
+          "url": "https://agentskills.io",
+          "tier": "TIER1_OFFICIAL",
+          "type": "docs",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://github.com/agentskills/agentskills",
+          "tier": "TIER1_OFFICIAL",
+          "type": "repo",
+          "accessed": "2026-10-30",
+          "note": ""
+        },
+        {
+          "url": "https://rubinlake.com/en/technology-radar/developer-ai-and-delivery/agent-skills",
+          "tier": "TIER3_PRACTICAL",
+          "type": "review",
+          "accessed": "2026-10-30",
+          "note": ""
+        }
+      ],
+      "source_tier": "TIER1_OFFICIAL",
+      "repo": "github.com/agentskills/agentskills",
+      "popularity": {
+        "stars": 26783
+      },
+      "aliases": [],
+      "overlaps_with": [],
+      "duplicate_of": null,
+      "current_tool": null,
+      "derived": [
+        "last_verified=scan_date",
+        "reverify_after=last_verified+60d"
+      ],
+      "id": "skills/open-standard",
+      "first_seen": "2026-10-30",
+      "seen_count": 1,
+      "verdict_history": [
+        {
+          "date": "2026-10-30",
+          "verdict": "WATCH"
+        }
+      ],
+      "prior_verdict": null,
+      "verdict": "WATCH"
+    }
+  },
+  "aliases": {
+    "agents::name:claude duet": "agents/claude-duet",
+    "agents::name:github copilot coding": "agents/github-copilot-coding",
+    "agents::name:hermes": "agents/hermes",
+    "agents::repo:github.com/nousresearch/hermes-agent": "agents/hermes",
+    "agents::name:codex cli": "agents/openai-codex",
+    "agents::repo:github.com/openai/codex": "agents/openai-codex",
+    "agents::name:codex cloud": "agents/openai-codex",
+    "agents::name:openai codex": "agents/openai-codex",
+    "automation::name:activepieces": "automation/activepieces",
+    "automation::repo:github.com/activepieces/activepieces": "automation/activepieces",
+    "automation::name:make agents": "automation/make-agents",
+    "automation::name:n8n": "automation/n8n",
+    "automation::repo:github.com/n8n-io/n8n": "automation/n8n",
+    "automation::name:zapier": "automation/zapier",
+    "mcp::repo:github.com/upstash/context7": "mcp/context7",
+    "mcp::name:context7": "mcp/context7",
+    "mcp::name:firecrawl": "mcp/firecrawl",
+    "mcp::repo:github.com/firecrawl/firecrawl-mcp-server": "mcp/firecrawl",
+    "mcp::repo:github.com/github/github-mcp-server": "mcp/github",
+    "mcp::name:github": "mcp/github",
+    "mcp::repo:github.com/microsoft/playwright-mcp": "mcp/playwright",
+    "mcp::name:playwright": "mcp/playwright",
+    "mcp::repo:github.com/modelcontextprotocol/registry": "mcp/registry",
+    "mcp::name:registry": "mcp/registry",
+    "models::name:claude 5 5 model family": "models/claude-5-5-model-family",
+    "models::name:claude cowork in any conversation": "models/claude-cowork-in-any-conversation",
+    "models::name:claude memory": "models/claude-memory",
+    "models::name:gpt 6 gpt 6 1 terra in chatgpt": "models/gpt-6-gpt-6-1-terra-in-chatgpt",
+    "oss::name:aider": "oss/aider",
+    "oss::repo:github.com/aider-ai/aider": "oss/aider",
+    "oss::name:awesome": "oss/awesome",
+    "oss::repo:github.com/punkpeye/awesome-mcp-servers": "oss/awesome",
+    "oss::name:browser use": "oss/browser-use",
+    "oss::repo:github.com/browser-use/browser-use": "oss/browser-use",
+    "oss::repo:github.com/cline/cline": "oss/cline",
+    "oss::name:cline": "oss/cline",
+    "oss::name:gemini cli": "oss/gemini-cli",
+    "oss::repo:github.com/google-gemini/gemini-cli": "oss/gemini-cli",
+    "oss::repo:github.com/openhands/openhands": "oss/openhands",
+    "oss::name:opendevin": "oss/openhands",
+    "oss::name:openhands": "oss/openhands",
+    "plugins_connectors::name:chatgpt icloud mail calendar": "plugins_connectors/chatgpt-icloud-mail-calendar",
+    "plugins_connectors::name:claude code directory": "plugins_connectors/claude-code-directory",
+    "plugins_connectors::repo:github.com/anthropics/claude-plugins-official": "plugins_connectors/claude-code-directory",
+    "plugins_connectors::name:salesforce in claude": "plugins_connectors/salesforce-in-claude",
+    "plugins_connectors::name:security scanning": "plugins_connectors/security-scanning",
+    "research_search::repo:github.com/exa-labs/exa-mcp-server": "research_search/exa",
+    "research_search::name:exa": "research_search/exa",
+    "research_search::name:exa search api": "research_search/exa",
+    "research_search::name:gemini deep research max": "research_search/gemini-deep-research-max",
+    "research_search::name:parallel search api": "research_search/parallel-search-api",
+    "research_search::name:perplexity search api": "research_search/perplexity-search-api",
+    "research_search::repo:github.com/tavily-ai/tavily-mcp": "research_search/tavily",
+    "research_search::name:tavily": "research_search/tavily",
+    "skills::repo:github.com/anthropics/skills": "skills/anthropic",
+    "skills::name:anthropic": "skills/anthropic",
+    "skills::repo:github.com/agentskills/agentskills": "skills/open-standard",
+    "skills::name:open standard": "skills/open-standard"
+  },
+  "scans": [
+    {
+      "date": "2026-10-30",
+      "file": "scan-2026-10-30.json",
+      "new": 34,
+      "merged": 1,
+      "rejected": 0
+    }
+  ]
+}

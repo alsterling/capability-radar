@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capability-radar"
+version = "0.1.0"
+description = "On-demand radar for AI capabilities: discover, dedupe, rank by evidence, remember and re-verify."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = []
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3"]
+
+[project.scripts]
+capradar = "capradar.cli:main"
+
+[tool.setuptools]
+packages = ["capradar"]
+
+[tool.setuptools.package-data]
+capradar = ["data/*"]

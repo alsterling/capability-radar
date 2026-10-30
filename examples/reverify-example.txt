@@ -1,0 +1,104 @@
+Reverify check as of 2026-10-30
+
+STALE (0)
+
+DUE (0)
+
+TRIGGER WATCH (3)
+  - [agents] Claude Duet: leaves research preview
+  - [research_search] Tavily: ownership change confirmed
+  - [skills] Anthropic Agent Skills (anthropics/skills): new document skill added or license change
+
+CATEGORIES NEEDING A FRESH SCAN (0)
+
+Nothing stale or due.
+
+----- same ledger, checked as of 2027-01-15 -----
+Reverify check as of 2027-01-15
+
+STALE (34)
+  - [agents] Claude Duet: verified 77d ago > 45d window
+  - [agents] GitHub Copilot coding agent: verified 77d ago > 45d window
+  - [agents] Hermes Agent: verified 77d ago > 45d window
+  - [agents] OpenAI Codex: verified 77d ago > 45d window
+  - [automation] Activepieces: verified 77d ago > 60d window
+  - [automation] Make AI Agents: verified 77d ago > 60d window
+  - [automation] n8n: verified 77d ago > 60d window
+  - [automation] Zapier MCP: verified 77d ago > 60d window
+  - [mcp] Context7: verified 77d ago > 45d window
+  - [mcp] Firecrawl MCP Server: verified 77d ago > 45d window
+  - [mcp] GitHub MCP Server: verified 77d ago > 45d window
+  - [mcp] Playwright MCP: verified 77d ago > 45d window
+  - [mcp] Official MCP Registry: verified 77d ago > 45d window
+  - [models] Claude 5.5 model family (Opus, Sonnet, Haiku 5.5): verified 77d ago > 30d window
+  - [models] Claude Cowork in any conversation: verified 77d ago > 30d window
+  - [models] Claude memory (Cowork and chat): verified 77d ago > 30d window
+  - [models] GPT-6 and GPT-6.1 Terra in ChatGPT: verified 77d ago > 30d window
+  - [oss] Aider: verified 77d ago > 60d window
+  - [oss] awesome-mcp-servers: verified 77d ago > 60d window
+  - [oss] browser-use: verified 77d ago > 60d window
+  - [oss] Cline: verified 77d ago > 60d window
+  - [oss] Gemini CLI: verified 77d ago > 60d window
+  - [oss] OpenHands: verified 77d ago > 60d window
+  - [plugins_connectors] ChatGPT iCloud Mail and Calendar: verified 77d ago > 60d window
+  - [plugins_connectors] Claude Code official plugin directory (claude-plugins-official): verified 77d ago > 60d window
+  - [plugins_connectors] Salesforce in Claude: verified 77d ago > 60d window
+  - [plugins_connectors] Skill and plugin security scanning: verified 77d ago > 60d window
+  - [research_search] Exa: verified 77d ago > 45d window
+  - [research_search] Gemini Deep Research Max: verified 77d ago > 45d window
+  - [research_search] Parallel Search API: verified 77d ago > 45d window
+  - [research_search] Perplexity Search API: verified 77d ago > 45d window
+  - [research_search] Tavily: verified 77d ago > 45d window
+  - [skills] Anthropic Agent Skills (anthropics/skills): verified 77d ago > 60d window
+  - [skills] Agent Skills open standard (agentskills.io): verified 77d ago > 60d window
+
+DUE (34)
+  - [agents] Claude Duet: reverify date reached
+  - [agents] GitHub Copilot coding agent: reverify date reached
+  - [agents] Hermes Agent: reverify date reached
+  - [agents] OpenAI Codex: reverify date reached
+  - [automation] Activepieces: reverify date reached
+  - [automation] Make AI Agents: reverify date reached
+  - [automation] n8n: reverify date reached
+  - [automation] Zapier MCP: reverify date reached
+  - [mcp] Context7: reverify date reached
+  - [mcp] Firecrawl MCP Server: reverify date reached
+  - [mcp] GitHub MCP Server: reverify date reached
+  - [mcp] Playwright MCP: reverify date reached
+  - [mcp] Official MCP Registry: reverify date reached
+  - [models] Claude 5.5 model family (Opus, Sonnet, Haiku 5.5): reverify date reached
+  - [models] Claude Cowork in any conversation: reverify date reached
+  - [models] Claude memory (Cowork and chat): reverify date reached
+  - [models] GPT-6 and GPT-6.1 Terra in ChatGPT: reverify date reached
+  - [oss] Aider: reverify date reached
+  - [oss] awesome-mcp-servers: reverify date reached
+  - [oss] browser-use: reverify date reached
+  - [oss] Cline: reverify date reached
+  - [oss] Gemini CLI: reverify date reached
+  - [oss] OpenHands: reverify date reached
+  - [plugins_connectors] ChatGPT iCloud Mail and Calendar: reverify date reached
+  - [plugins_connectors] Claude Code official plugin directory (claude-plugins-official): reverify date reached
+  - [plugins_connectors] Salesforce in Claude: reverify date reached
+  - [plugins_connectors] Skill and plugin security scanning: reverify date reached
+  - [research_search] Exa: reverify date reached
+  - [research_search] Gemini Deep Research Max: reverify date reached
+  - [research_search] Parallel Search API: reverify date reached
+  - [research_search] Perplexity Search API: reverify date reached
+  - [research_search] Tavily: reverify date reached
+  - [skills] Anthropic Agent Skills (anthropics/skills): reverify date reached
+  - [skills] Agent Skills open standard (agentskills.io): reverify date reached
+
+TRIGGER WATCH (3)
+  - [agents] Claude Duet: leaves research preview
+  - [research_search] Tavily: ownership change confirmed
+  - [skills] Anthropic Agent Skills (anthropics/skills): new document skill added or license change
+
+CATEGORIES NEEDING A FRESH SCAN (8)
+  - Skills: newest verification 2026-10-30 is older than 60d
+  - Plugins / Connectors: newest verification 2026-10-30 is older than 60d
+  - MCPs: newest verification 2026-10-30 is older than 45d
+  - Agents / Persistent Workers: newest verification 2026-10-30 is older than 45d
+  - GitHub / OSS Projects: newest verification 2026-10-30 is older than 60d
+  - Models / Native Features: newest verification 2026-10-30 is older than 30d
+  - Research / Search Tools: newest verification 2026-10-30 is older than 45d
+  - Automation / Workflow Tools: newest verification 2026-10-30 is older than 60d
