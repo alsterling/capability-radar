@@ -1,0 +1,146 @@
+Reverify check as of 2026-10-30
+
+STALE (0)
+
+DUE (0)
+
+TRIGGER WATCH (28)
+  - [agents] ChatGPT dots (always-on agents): available on Plus or multiple dots per user
+  - [agents] Claude Duet: leaves research preview or opens outside the US waitlist
+  - [agents] Claude Managed Agents: leaves beta
+  - [agents] Hermes Agent: independent evaluation or security audit
+  - [agents] OpenClaw: security model hardened (default sandbox, permission model)
+  - [mcp] MCP 2026-07-28 specification and official registry: next spec revision or client support for stateless mode
+  - [mcp] context-mode: independent task-success benchmark
+  - [mcp] Context7: independent hallucination-rate comparison published
+  - [models] ChatGPT Slides: reaches Plus
+  - [models] Claude 5.5 model tiers (Opus, Sonnet, Haiku 5.5): new Claude model release
+  - [models] Gemini 3.8 Flash and upcoming Gemini 4: Gemini 4 general availability
+  - [models] GPT-6 family in ChatGPT and Codex (Sol, Luna, Pro, 6.1 Terra): GPT-6.1 Terra reaches Chat or independent evals published
+  - [oss] promptfoo: acquisition closes or license changes
+  - [oss] RTK (Rust Token Killer): independent benchmark or license change
+  - [plugins_connectors] ChatGPT Meetings plugin: general availability or official privacy documentation
+  - [plugins_connectors] Claude Code official LSP code-intelligence plugins: LSP enabled by default in Claude Code
+  - [plugins_connectors] Claude plugin directory and developer portal: unified Claude + Claude Code discovery ships
+  - [plugins_connectors] Skill and plugin security scanning: scanning reaches Pro/Max plans or Claude Code
+  - [research_search] Gemini Deep Research Max: leaves preview or Gemini 4 version ships
+  - [research_search] Perplexity Search API: Artificial Analysis Search Index update
+  - [research_search] Tavily: Nebius roadmap or pricing change
+  - [skills] Anthropic Agent Skills (anthropics/skills): license change of the document skills; new document skill added
+  - [skills] Caveman (terse-output skill): input-side compression results published
+  - [skills] skill-creator evals and benchmark mode: 'claude plugin eval' confirmed in official changelog
+  - [skills] Humanizer (blader/humanizer): major version or published evaluation
+  - [skills] Agent Skills open standard (agentskills.io): AAIF governance or format change; new SKILL.md spec version
+  - [skills] skills.sh directory and leaderboard: adds security review or provenance signals
+  - [skills] Superpowers (obra/superpowers): independent evaluation published
+
+CATEGORIES NEEDING A FRESH SCAN (0)
+
+Nothing stale or due.
+
+----- same ledger, checked as of 2026-12-20 -----
+Reverify check as of 2026-12-20
+
+STALE (32)
+  - [agents] ChatGPT dots (always-on agents): verified 51d ago > 45d window
+  - [agents] Claude Code cloud sessions and scheduled tasks: verified 51d ago > 45d window
+  - [agents] Claude Duet: verified 51d ago > 45d window
+  - [agents] Claude Managed Agents: verified 51d ago > 45d window
+  - [agents] Codex cloud tasks and automations: verified 51d ago > 45d window
+  - [agents] GitHub Copilot coding agent (Agent HQ): verified 51d ago > 45d window
+  - [agents] Google Jules: verified 51d ago > 45d window
+  - [agents] Hermes Agent: verified 51d ago > 45d window
+  - [agents] OpenClaw: verified 51d ago > 45d window
+  - [mcp] MCP 2026-07-28 specification and official registry: verified 51d ago > 45d window
+  - [mcp] Chrome DevTools MCP: verified 51d ago > 45d window
+  - [mcp] context-mode: verified 51d ago > 45d window
+  - [mcp] Context7: verified 51d ago > 45d window
+  - [mcp] GitHub MCP Server: verified 51d ago > 45d window
+  - [mcp] Playwright MCP: verified 51d ago > 45d window
+  - [mcp] Serena: verified 51d ago > 45d window
+  - [models] ChatGPT Slides: verified 51d ago > 30d window
+  - [models] Claude 5.5 model tiers (Opus, Sonnet, Haiku 5.5): verified 51d ago > 30d window
+  - [models] Claude Cowork in every conversation (with memory): verified 51d ago > 30d window
+  - [models] Claude Slides, Docs and Design in any conversation: verified 51d ago > 30d window
+  - [models] Gemini 3.8 Flash and upcoming Gemini 4: verified 51d ago > 30d window
+  - [models] GPT-6 family in ChatGPT and Codex (Sol, Luna, Pro, 6.1 Terra): verified 51d ago > 30d window
+  - [models] Monthly API credits on Max and Team plans: verified 51d ago > 30d window
+  - [models] Open-weight frontier models (GLM-5.3, Kimi K3): verified 51d ago > 30d window
+  - [research_search] Built-in deep research in ChatGPT and Claude: verified 51d ago > 45d window
+  - [research_search] Elicit: verified 51d ago > 45d window
+  - [research_search] Exa: verified 51d ago > 45d window
+  - [research_search] Gemini Deep Research Max: verified 51d ago > 45d window
+  - [research_search] NotebookLM: verified 51d ago > 45d window
+  - [research_search] Parallel Search API: verified 51d ago > 45d window
+  - [research_search] Perplexity Search API: verified 51d ago > 45d window
+  - [research_search] Tavily: verified 51d ago > 45d window
+
+DUE (32)
+  - [agents] ChatGPT dots (always-on agents): reverify date reached
+  - [agents] Claude Code cloud sessions and scheduled tasks: reverify date reached
+  - [agents] Claude Duet: reverify date reached
+  - [agents] Claude Managed Agents: reverify date reached
+  - [agents] Codex cloud tasks and automations: reverify date reached
+  - [agents] GitHub Copilot coding agent (Agent HQ): reverify date reached
+  - [agents] Google Jules: reverify date reached
+  - [agents] Hermes Agent: reverify date reached
+  - [agents] OpenClaw: reverify date reached
+  - [mcp] MCP 2026-07-28 specification and official registry: reverify date reached
+  - [mcp] Chrome DevTools MCP: reverify date reached
+  - [mcp] context-mode: reverify date reached
+  - [mcp] Context7: reverify date reached
+  - [mcp] GitHub MCP Server: reverify date reached
+  - [mcp] Playwright MCP: reverify date reached
+  - [mcp] Serena: reverify date reached
+  - [models] ChatGPT Slides: reverify date reached
+  - [models] Claude 5.5 model tiers (Opus, Sonnet, Haiku 5.5): reverify date reached
+  - [models] Claude Cowork in every conversation (with memory): reverify date reached
+  - [models] Claude Slides, Docs and Design in any conversation: reverify date reached
+  - [models] Gemini 3.8 Flash and upcoming Gemini 4: reverify date reached
+  - [models] GPT-6 family in ChatGPT and Codex (Sol, Luna, Pro, 6.1 Terra): reverify date reached
+  - [models] Monthly API credits on Max and Team plans: reverify date reached
+  - [models] Open-weight frontier models (GLM-5.3, Kimi K3): reverify date reached
+  - [research_search] Built-in deep research in ChatGPT and Claude: reverify date reached
+  - [research_search] Elicit: reverify date reached
+  - [research_search] Exa: reverify date reached
+  - [research_search] Gemini Deep Research Max: reverify date reached
+  - [research_search] NotebookLM: reverify date reached
+  - [research_search] Parallel Search API: reverify date reached
+  - [research_search] Perplexity Search API: reverify date reached
+  - [research_search] Tavily: reverify date reached
+
+TRIGGER WATCH (28)
+  - [agents] ChatGPT dots (always-on agents): available on Plus or multiple dots per user
+  - [agents] Claude Duet: leaves research preview or opens outside the US waitlist
+  - [agents] Claude Managed Agents: leaves beta
+  - [agents] Hermes Agent: independent evaluation or security audit
+  - [agents] OpenClaw: security model hardened (default sandbox, permission model)
+  - [mcp] MCP 2026-07-28 specification and official registry: next spec revision or client support for stateless mode
+  - [mcp] context-mode: independent task-success benchmark
+  - [mcp] Context7: independent hallucination-rate comparison published
+  - [models] ChatGPT Slides: reaches Plus
+  - [models] Claude 5.5 model tiers (Opus, Sonnet, Haiku 5.5): new Claude model release
+  - [models] Gemini 3.8 Flash and upcoming Gemini 4: Gemini 4 general availability
+  - [models] GPT-6 family in ChatGPT and Codex (Sol, Luna, Pro, 6.1 Terra): GPT-6.1 Terra reaches Chat or independent evals published
+  - [oss] promptfoo: acquisition closes or license changes
+  - [oss] RTK (Rust Token Killer): independent benchmark or license change
+  - [plugins_connectors] ChatGPT Meetings plugin: general availability or official privacy documentation
+  - [plugins_connectors] Claude Code official LSP code-intelligence plugins: LSP enabled by default in Claude Code
+  - [plugins_connectors] Claude plugin directory and developer portal: unified Claude + Claude Code discovery ships
+  - [plugins_connectors] Skill and plugin security scanning: scanning reaches Pro/Max plans or Claude Code
+  - [research_search] Gemini Deep Research Max: leaves preview or Gemini 4 version ships
+  - [research_search] Perplexity Search API: Artificial Analysis Search Index update
+  - [research_search] Tavily: Nebius roadmap or pricing change
+  - [skills] Anthropic Agent Skills (anthropics/skills): license change of the document skills; new document skill added
+  - [skills] Caveman (terse-output skill): input-side compression results published
+  - [skills] skill-creator evals and benchmark mode: 'claude plugin eval' confirmed in official changelog
+  - [skills] Humanizer (blader/humanizer): major version or published evaluation
+  - [skills] Agent Skills open standard (agentskills.io): AAIF governance or format change; new SKILL.md spec version
+  - [skills] skills.sh directory and leaderboard: adds security review or provenance signals
+  - [skills] Superpowers (obra/superpowers): independent evaluation published
+
+CATEGORIES NEEDING A FRESH SCAN (4)
+  - MCPs: newest verification 2026-10-30 is older than 45d
+  - Agents / Persistent Workers: newest verification 2026-10-30 is older than 45d
+  - Models / Native Features: newest verification 2026-10-30 is older than 30d
+  - Research / Search Tools: newest verification 2026-10-30 is older than 45d

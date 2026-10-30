@@ -1,0 +1,236 @@
+{
+  "scan_plan": "capradar 0.1.0",
+  "date": "2026-10-30",
+  "top": 10,
+  "lanes": [
+    {
+      "id": "skills",
+      "label": "Skills"
+    },
+    {
+      "id": "plugins_connectors",
+      "label": "Plugins / Connectors"
+    },
+    {
+      "id": "mcp",
+      "label": "MCPs"
+    },
+    {
+      "id": "agents",
+      "label": "Agents / Persistent Workers"
+    },
+    {
+      "id": "oss",
+      "label": "GitHub / OSS Projects"
+    },
+    {
+      "id": "models",
+      "label": "Models / Native Features"
+    },
+    {
+      "id": "research_search",
+      "label": "Research / Search Tools"
+    },
+    {
+      "id": "automation",
+      "label": "Automation / Workflow Tools"
+    }
+  ],
+  "profile": {
+    "name": "Technical knowledge worker / builder (generic, public-safe)",
+    "jobs": [
+      "deep research and evidence gathering: answer technical and market questions with cited, verifiable sources",
+      "coding and software building: write, refactor, test and ship small-to-medium software projects with coding agents",
+      "technical and engineering knowledge work: read specs, papers and codebases; produce analyses, designs and decisions",
+      "presentations: turn research and analysis into slide decks quickly",
+      "writing and content creation: draft, edit and publish long-form writing that reads as human, not generic AI text",
+      "workflow automation: automate recurring multi-step workflows across apps and APIs",
+      "file and document work: create, convert, extract from and edit PDF, Word, spreadsheet and Markdown documents",
+      "background and persistent execution: run long or scheduled agent tasks unattended and review the results later",
+      "personal productivity: manage tasks, notes, email and calendar with less manual effort and lower token/context cost",
+      "discovering and evaluating new AI capabilities: find, test and benchmark new AI tools before adopting them"
+    ],
+    "current_stack": [
+      {
+        "name": "ChatGPT",
+        "category": "models",
+        "covers": [
+          "chat",
+          "deep research",
+          "agent mode",
+          "image generation",
+          "connectors",
+          "projects",
+          "memory"
+        ]
+      },
+      {
+        "name": "Claude",
+        "category": "models",
+        "covers": [
+          "chat",
+          "research",
+          "projects",
+          "memory",
+          "artifacts",
+          "connectors",
+          "file creation",
+          "skills"
+        ]
+      },
+      {
+        "name": "Claude Code",
+        "category": "agents",
+        "covers": [
+          "terminal coding agent",
+          "plugins",
+          "skills",
+          "MCP",
+          "hooks",
+          "subagents",
+          "cloud sessions",
+          "scheduled tasks"
+        ]
+      },
+      {
+        "name": "Codex",
+        "category": "agents",
+        "covers": [
+          "cloud and CLI coding agent",
+          "code review",
+          "parallel tasks"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "category": "oss",
+        "covers": [
+          "repositories",
+          "pull requests",
+          "issues",
+          "actions",
+          "code search"
+        ]
+      }
+    ],
+    "constraints": [
+      "budget: prefer what is already paid for; a new paid tool must replace or clearly beat something owned",
+      "privacy: no tool that trains on private inputs; read-only scopes preferred; no secrets in prompts or profiles",
+      "security: third-party MCP servers, plugins and skills are code with permissions; review before any install",
+      "time: a trial must fit in about one hour on a real job",
+      "scope: this run is discovery and ranking only; nothing is installed"
+    ]
+  },
+  "already_in_ledger": {
+    "skills": [],
+    "plugins_connectors": [],
+    "mcp": [],
+    "agents": [],
+    "oss": [],
+    "models": [],
+    "research_search": [],
+    "automation": []
+  },
+  "reverify": [],
+  "workspace": "the folder given by --dir (default ./radar)",
+  "write_candidates_to": "inbox/scan-2026-10-30.json",
+  "candidate_contract": {
+    "required": [
+      "name",
+      "category"
+    ],
+    "text_fields": [
+      "job",
+      "description",
+      "cost",
+      "privacy",
+      "permissions",
+      "reason",
+      "version",
+      "evidence_notes",
+      "reverify_trigger",
+      "maintenance_notes"
+    ],
+    "enum_fields": {
+      "recommendation": [
+        "USE",
+        "TEST",
+        "WATCH",
+        "IGNORE"
+      ],
+      "improvement_opportunity": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ],
+      "benchmark_needed": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ],
+      "native_overlap": [
+        "YES",
+        "PARTIAL",
+        "NO",
+        "UNKNOWN"
+      ],
+      "evidence_quality": [
+        "STRONG",
+        "MODERATE",
+        "WEAK",
+        "ANECDOTAL",
+        "UNKNOWN"
+      ],
+      "status": [
+        "ACTIVE",
+        "MAINTAINED",
+        "PREVIEW",
+        "STALE",
+        "ARCHIVED",
+        "DEPRECATED",
+        "UNKNOWN"
+      ]
+    },
+    "date_fields": [
+      "last_activity",
+      "last_verified",
+      "reverify_after"
+    ],
+    "sources": {
+      "url": "required",
+      "tier": [
+        "TIER1_OFFICIAL",
+        "TIER2_ECOSYSTEM",
+        "TIER3_PRACTICAL",
+        "UNKNOWN"
+      ],
+      "type": [
+        "docs",
+        "changelog",
+        "registry",
+        "repo",
+        "benchmark",
+        "review",
+        "news",
+        "forum",
+        "social",
+        "other"
+      ],
+      "accessed": "YYYY-MM-DD"
+    },
+    "other": {
+      "popularity": "object, e.g. {\"stars\": 1200, \"downloads\": \"UNKNOWN\"}",
+      "aliases": "list of other names / wrappers / forks",
+      "overlaps_with": "list of tools it duplicates",
+      "duplicate_of": "name of the canonical candidate if this is a wrapper/fork",
+      "current_tool": "{\"name\": ..., \"relation\": REPLACES|COMPLEMENTS|DUPLICATES|BEATS|LOSES_TO}",
+      "repo": "the candidate's own repository URL, if any"
+    },
+    "rule": "Use UNKNOWN for anything you could not verify. Never guess."
+  },
+  "then_run": [
+    "python -m capradar ingest <workspace>/inbox/scan-2026-10-30.json",
+    "python -m capradar report --top 10",
+    "python -m capradar reverify"
+  ]
+}
